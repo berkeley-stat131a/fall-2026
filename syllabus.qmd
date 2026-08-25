@@ -5,7 +5,7 @@ editor:
     wrap: sentence
 ---
 
-<!-- \[Syllabus subject to change until August 28th, 2024\]. -->
+[All information in the syllabus is subject to change as long as this message is visible!]
 
 **Students in Stat 131A are expected to have read the syllabus in its entirety by the second week of the course.**
 
@@ -14,26 +14,16 @@ editor:
 ### Description 🔎
 
 Stat 131A is a upper-division course that follows Data 8 or STAT 20.
-The course will teach a broad range of statistical methods that are used to solve data problems, including group comparisons, standard parametric statistical models, multivariate data visualization, multiple linear regression and classification, classification and regression trees, and random forests.
+The course will teach a broad range of statistical methods that are used to solve data problems, including group comparisons, standard parametric statistical models, multivariate data visualization, and multiple linear regression and classification.
 Students will be introduced to the widely used `R` statistical language and they will obtain hands-on experience in implementing a range of statistical methods on numerous real world datasets.
 
 In short, **Stat 131A will provide you with a Swiss army knife of foundational statistical methods to use for data science projects!**
 
 ### Lectures 🧑‍🏫
 
-MWF 2-3pm \@ [Morgan 101](https://dac.berkeley.edu/morgan-hall)
+MWF 2-3pm \@ GSPP 150
 
 Lecture attendance is mandatory. See below for more details.
-
-### Labs 🧪
-
-Lab 101: Tuesday and Thursday, 11am-12pm \@ [Evans 330](https://www.berkeley.edu/map/evans-hall/)
-
-Lab 102: Tuesday and Thursday, 4-5pm \@ Hearst Mining Bldg 310 (Hearst is next to [Evans Hall](https://www.berkeley.edu/map/evans-hall/))
-
-You should only be signed up for one lab group.
-
-Lab attendance is optional, but highly encouraged.
 
 ### Office hours (OH) 🗓️
 
@@ -43,10 +33,9 @@ Lab attendance is optional, but highly encouraged.
 
 Josh's Office Hours:
 
-- MWF 1:45pm + 3pm in lobby outside Morgan 101 (before and after lecture)
-- T+Th 7-8:30pm @ Evans 334
+- MWF right after lecture at 3pm 
 
-Van's Office Hours:
+<!-- Van's Office Hours:
 
 - ~~Wednesdays 10am-12pm @ Evans 434~~
 - Wednesdays 4-5pm (group tutoring), TBD
@@ -59,66 +48,66 @@ Van's Office Hours:
 - One slot every weekday at 11am.
 - Designed for career and life advising, not logistical concerns or help with coursework.
 - Please limit to no more than one chat per month. 
-- Book [at this link](https://calendly.com/jdgg-berkeley/20-minute-phone-call-with-josh?)
+- Book [at this link](https://calendly.com/jdgg-berkeley/20-minute-phone-call-with-josh?) -->
 
 <!-- - OH times will be posted shortly after the semester begins. -->
 <!-- - Please note that there are no regular OH during the first week of class. -->
-We may add or reschedule OH if needed. 
+<!-- We may add or reschedule OH if needed.  -->
 
-- Please [create a private Ed post](https://edstem.org/us/courses/63606/discussion/) if you have conflicts with all of the scheduled OH. 
+<!-- - Please [create a private Ed post](https://edstem.org/us/courses/63606/discussion/) if you have conflicts with all of the scheduled OH.  -->
 
 **Coming to office hours does not send a signal that you are behind or need extra help.** In fact, the students who come to OH are often the most successful in the course.
 
 - OH is a great opportunity to discuss not only topics directly related to the course, but also anything else that's on your mind.
 - We also welcome questions about career trajectories and research opportunities at UC Berkeley and beyond.
 - Keep in mind that you **do not** need to come to office hours with an agenda. Listening in is welcomed and encouraged!
-- Finally, attending and participating in office hours is a great way to set yourself up for a terrific letter of recommendation. This is true for most courses!
+- Finally, attending and participating in office hours is a great way to set yourself up for a terrific **letter of recommendation**. This is true for most courses!
 - If you don't already, I highly recommend that you attend the instructors' office hours in other classes from time to time.
 
-## Study groups 👥
+<!-- ## Study groups 👥
 
 We encourage you to work together in groups to solidify your understanding of the course material. 
 
 If you would like assistance forming a study group, please complete [the study group form](https://docs.google.com/forms/d/e/1FAIpQLSd2XYenKGH8jtXAOUxSl8oXpQxiLwwDGw0edC9Qw56iwDPDjA/viewform?usp=sf_link) by Monday, September 2nd at 11:59pm PT. 
 
 Our goal is to form the study groups ASAP, 
-so students can begin discussing the first homework assignment.
+so students can begin discussing the first homework assignment. -->
 
-## Concurrent enrollment and auditing 👂
+<!-- ## Concurrent enrollment and auditing 👂
 
 Concurrent enrollment students wishing to register for the class should fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfbYciXBFrZvO1WbtsIOTCOiWmV2EvC3RqN0dW9_3NHzE2QWQ/viewform?usp=sf_link) to give me information about their previous coursework so we can assess whether they have satisfied the pre-requisites.
 
 **UPDATE**: Stat 131A will not be enrolling concurrent enrollment students in Fall 2024. But, concurrent enrollment students are welcome to audit the course.
 
 Students who wish to audit the course can also fill out the top portion of this form to get their email added to [bcourses](https://bcourses.berkeley.edu/courses/1537932) as a guest. 
-Only name and email is needed for auditors.
+Only name and email is needed for auditors. -->
 
 ## Course platforms 🖥️
 
 [bcourses](https://bcourses.berkeley.edu/courses/1537932) will only be used for secure course material, like exam solutions, grades, and office hour Zoom links.
 
-All other course materials will be posted on [the public course homepage](https://stat131a.berkeley.edu/fall-2024).
+All other course materials will be posted on [the public course homepage](https://stat131a.berkeley.edu/fall-2026).
 
-Assignments should be submitted via [Gradescope](https://www.gradescope.com/courses/833089).
+Assignments should be submitted via [Pensive](https://www.pensive.com/teacher/classes/stat131a_fa26).
 
-All course communication will take place via [Ed](https://edstem.org/us/courses/63606/discussion/).
+All course communication will take place via [Ed](https://edstem.org/us/courses/104001/discussion).
 
-The only acceptable large-language model (LLM) for use in Stat 131a is [PingPong](https://pingpong.hks.harvard.edu/login). 
+<!-- The only acceptable large-language model (LLM) for use in Stat 131a is [PingPong](https://pingpong.hks.harvard.edu/login).  -->
 
-- **Unless otherwise indicated, all other LLMs (e.g., ChatGPT) are prohibited and considered cheating in this course.**
-- Enrolled students will receive an invitation to PingPong via email shortly after the semester begins. 
+<!-- - **Unless otherwise indicated, all other LLMs (e.g., ChatGPT) are prohibited and considered cheating in this course.**
+- Enrolled students will receive an invitation to PingPong via email shortly after the semester begins.  -->
 
 ## Grades 💯
 
 Grades are calculated as follows:
 
--   Lecture attendance and participation: 10%
--   Labs: 10%
--   Homework: 20%
--   Final project: 15%
--   Midterm 1 (during class): 10%
--   Midterm 2 (during class): 15%
--   Final: 20%
+-   Prerequisite Quiz: 5%
+-   Lecture attendance and participation: 10% + up to 2% bonus for having a variety of neighbors in neighbor discussions
+-   Homework: 15%
+-   Midterm 1: 15%
+-   Midterm 2: 15%
+-   Midterm 3: 15%
+-   Final: 25%
 
 Grades will not be curved.
 
@@ -131,7 +120,7 @@ See attendance policy below for an opportunity to earn up to two percentage poin
 
 ## Lecture technology policy ❌ 👩‍💻 $~$ ✅📱
 
-Most lectures will consist of an interactive problem-solving session, followed by a hands-on demo or coding session.
+Most lectures will consist of an interactive problem-solving session, along with a hands-on demo or coding session.
 
 - **Laptops and tablets with attached keyboards are not allowed during the problem-solving session**, though you are permitted to use a tablet to take handwritten notes. 
 
@@ -141,7 +130,7 @@ Most lectures will consist of an interactive problem-solving session, followed b
 
 - Phones are allowed during lecture. It is preferable to use a phone to submit conceptual questions and neighbor discussion answers during lecture.
 
-- [This article](https://www.nytimes.com/2017/11/22/business/laptops-not-during-lecture-or-meeting.html) explains why we have the laptop policy. Long story short, laptop use can negatively impact the learning of nearby students (i.e., this policy does not punish you; the policy prevents you from punishing others).
+- [This article](https://www.nytimes.com/2017/11/22/business/laptops-not-during-lecture-or-meeting.html) explains why we have the laptop policy. Long story short, laptop use can negatively impact the learning of nearby students (i.e., this policy is not intended to punish you; the policy prevents you from punishing others).
 
 - The course staff reserves the right to reduce your lecture attendance grade for violating the technology policy.
 
@@ -150,9 +139,9 @@ Most lectures will consist of an interactive problem-solving session, followed b
 Lectures will be recorded automatically.
 
 - The course staff cannot guarantee audio or video quality.
-- Lecture recordings are posted on [bcourses](https://bcourses.berkeley.edu/courses/1537932).
+- Lecture recordings are posted on [bcourses](https://bcourses.berkeley.edu/courses/1558712).
 
-Labs and office hours are not recorded. 
+Office hours are not recorded. 
 
 The homework assignments may occasionally ask you to watch additional recordings to supplement the lecture material (e.g., if we run out of time covering an essential topic).
 
@@ -206,47 +195,47 @@ To encourage discussion among all classmates, **we will award up to two percenta
 
 ## Homework 📝
 
-There are 6 homework assignments planned, though the exact number may change.
+There are 10 homework assignments planned, though the exact number may change.
 
 - Homework will be a combination of computational exercises and data analysis using the computer, as well as conceptual questions.
 - Homework assignments are weighted equally. 
 
-HW is generally due every other week.
+HW is generally due every week or two weeks.
 
 - Homework assignments will be posted to the course website at least one week before the HW deadline.
-- All homework assignments will be submitted via [Gradescope](https://www.gradescope.com/courses/833089) and are due by 11:59 pm of the due date.
+- All homework assignments will be submitted via [Pensive](https://www.pensive.com/teacher/classes/berkeley_data89_fa26) and are due by 11:59 pm of the due date.
 
-We will not drop your lowest-scoring homework assignment.
+<!-- We will not drop your lowest-scoring homework assignment.
 
 - Instead, we will raise your lowest homework score to 80\% of its maximum score, regardless of what you actually scored.
-- We will not change the grade of your lowest-scoring homework assignment if its score is above 80\%.
+- We will not change the grade of your lowest-scoring homework assignment if its score is above 80\%. -->
 
-**Poorly organized assignments will be docked points at the discretion of the grader.**
+<!-- **Poorly organized assignments will be docked points at the discretion of the grader.**
 
-- It is critical to have empathy for the person who will be reviewing your work, whether a member of the course staff, another student providing feedback, or your future manager. 
+- It is critical to have empathy for the person who will be reviewing your work, whether a member of the course staff, another student providing feedback, or your future manager.  -->
 
 ## Late HW ⏰
 
-**You are allotted five slip days for labs and homework assignments.** 
+**You are allotted ten slip days for homework assignments.** 
 
 - Each slip day adds 24 hours to the deadline. 
-- Slip days cannot be used on the final project or exams.
+<!-- - Slip days cannot be used on the final project or exams. -->
 - Slip days are intended to account for unexpected delays, like minor illness or homework overload. 
 - There is no extra credit awarded for unused slip days. 
 - You cannot use partial slip days. 
 
-**You are allowed to use, at most, two slip days per assignment.**
+**You are allowed to use, at most, four slip days per assignment.**
 
-- In other words, assignments will not be accepted more than 48 hours after the original due date. 
+- In other words, assignments will not be accepted more than 96 hours after the original due date. 
 - This policy ensures that we can grade all assignments in a timely fashion. 
 
 If you plan to use slip days, **do not contact the course staff.**
 
 - We will automatically account for slip days when calculating grades.
 
-Extensions will only be granted if required by a Letter of Accommodation (LoA), or in extraordinary circumstances (e.g., medical emergencies). 
+Extensions will only be granted if required by a DSP Letter of Accommodation (LoA), or in extraordinary circumstances (e.g., medical emergencies). 
 
-## Labs 🧪
+<!-- ## Labs 🧪
 
 During lab sessions, a GSI will review conceptual material and help you work through lab coding assignments.
 
@@ -268,7 +257,7 @@ While there is no Week 1 lab, there is a self-paced [Lab 0](assets/Lab00.html) f
 - **Before the first lab section on Tuesday of Week 2, work through [Lab 0](assets/Lab00.html).**
 
 - You do not have to turn in this lab, but we will assume that you have worked through this lab and understand the code.
-- If you have questions about this lab, please come to office hours or post on Ed.
+- If you have questions about this lab, please come to office hours or post on Ed. -->
 
 <!-- ### Communicating with Instructional Staff -->
 
@@ -281,29 +270,62 @@ While there is no Week 1 lab, there is a self-paced [Lab 0](assets/Lab00.html) f
 <!-- None of the instructors explain course material over email and will not respond to emails with such requests. -->
 <!-- Please come to office hours or discussion sections for questions about the material, or post questions to Ed Discussion. -->
 
-## Final project 📊
+<!-- ## Final project 📊
 
 The final project will be due on the last day of reading week, **Friday December 13**.
 
-More details on the final project will be provided later in the semester.
+More details on the final project will be provided later in the semester. -->
 
-## Exams ⌛
+## Final exam (25% of grade) ⌛
 
-The first midterm is scheduled for **Wednesday October 9** and will take place during lecture in Morgan 101. 
+The written final exam will take place on **Thursday December 17, 3-6pm**. Location TBD.
 
-The second midterm is scheduled for **Wednesday November 13** and will take place during lecture in Morgan 101.
+<!-- **If you cannot attend an exam due to an extenuating circumstance, please make a private Ed post ASAP to determine whether your circumstance qualifies for a make-up exam.** -->
 
-The final exam will take place **Thursday December 19, 3-6pm** (scheduled by the registrar). Location TBD.
+## Prerequisite Quiz and Midterms ⌛
 
-- All exams are cumulative, with emphasis on more recent material.
+Quizzes and midterms are all 50-minutes. They will take place in the [computer-based testing facility (CBTF)](https://rtl.berkeley.edu/services-programs/computer-based-testing-facility-cbtf). 
 
-- To acknowledge maturation over the course of the semester, exams are increasingly weighted in your course grade.
+You will sign up for a slot on [PrairieTest](https://us.prairietest.com/).
 
-- If you do not perform well on the first midterm, you can still do very well in 131a!
+- We will announce when slots are available.
 
-- **Update:** We will raise your midterm 1 and midterm 2 scores to up to 80% of the maximum score, based on your performance on the relevant sections of the final.
+### Prerequisite Quiz (5% of grade)
 
-**If you cannot attend an exam due to an extenuating circumstance, please contact the course staff ASAP to determine whether your circumstance qualifies for a make-up exam.**
+The prerequisite quiz is scheduled for Week 2 (8/31-9/4).
+
+- Once you score at least 85% on the prerequisite quiz, you will receive the full 5 percentage points for your final grade.
+
+- The prerequisite quiz can be retaken more than once. Your score on the prerequisite quiz is the highest of all attempts.
+
+- You can practice the prerequisite quiz on [PrairieLearn](https://us.prairielearn.com/).
+
+### Midterm 1 and Midterm 1 Retakes (15% of grade)
+
+Midterm 1 can be taken **Thursday October 1 or Friday October 2** in the CBTF.
+
+- Midterm 1 can be retaken once on **Wednesday October 7 or Thursday October 8** in the CBTF.
+
+- You must score below 90% to be eligible for a retake.
+
+- If you choose to retake, your Midterm 1 score will be the average of your first attempt score and (your retake score - 10 percentage points).
+
+### Midterm 2 and Midterm 2 Retakes (15% of grade)
+
+Midterm 2 can be taken **Monday October 26 or Tuesday October 27** in the CBTF.
+
+- Midterm 2 can be retaken once on **Monday November 2 or Tuesday November 3** in the CBTF.
+
+- The retake rules are the same as Midterm 1.
+
+### Midterm 3 and Midterm 3 Retakes (15% of grade)
+
+Midterm 3 can be taken **Wednesday December 2 or Thursday December 3** in the CBTF.
+
+- Midterm 3 can be retaken once on **Monday December 7 or Tuesday December 8** in the CBTF.
+
+- The retake rules are the same as Midterm 1.
+
 
 <!-- # Using R and resources for R -->
 
@@ -328,7 +350,7 @@ The final exam will take place **Thursday December 19, 3-6pm** (scheduled by the
 
 ## Textbooks and resources 📖
 
-Everything you need to know for Stat 131a will be covered in lectures, labs, and assignments.
+Everything you need to know for Stat 131a will be covered in lectures and assignments.
 
 - It is possible to do very well in Stat 131a without ever referring to an outside textbook or resource.
 
@@ -340,9 +362,9 @@ The [StatQuest YouTube Channel](https://www.youtube.com/@statquest) is an *excel
 
 - StatQuest provides videos on many of the topics we will cover in class. The instructor is very entertaining!
 
-If you would like some additional optional reading, you can try the following books.
+If you would like some additional optional reading, you can try the following books:
 
--   [Theory Meets Data](http://stat88.org/textbook/content/intro.html) by Ani Adhikari. This is the online book for STAT 88 that covers introductory probability at the level of Stat 20.
+<!-- -   [Theory Meets Data](http://stat88.org/textbook/content/intro.html) by Ani Adhikari. This is the online book for STAT 88 that covers introductory probability at the level of Stat 20. -->
 - [R for Data Science](http://r4ds.had.co.nz), by Garrett Grolemund and Hadley Wickham. This is a free online book that covers the `tidyverse` set of `R` packages.
 -   *The Statistical Sleuth: A Course in Methods of Data Analysis* by Ramsey and Schafer
 -   *Introductory Statistics with R* by Peter Dalgaard
@@ -373,16 +395,18 @@ Potential uses of LLMs in Stat 131A:
 - Explaining course concepts
 - Helping you code
 
-Unless otherwise indicated, **you can only use the course-approved LLM [PingPong](https://pingpong.hks.harvard.edu/login) for help on labs, homework, and the final project.**.
+**LLM use on exams is forbidden.** We have a zero-tolerance policy for LLM use on exams. If you are caught using an LLM on an exam, you will fail the course.
+
+<!-- Unless otherwise indicated, **you can only use the course-approved LLM [PingPong](https://pingpong.hks.harvard.edu/login) for help on labs, homework, and the final project.**.
 
 - Furthermore, if you use PingPong to help you, **you must submit a PDF of the relevant PingPong conversation along with your assignment.**
 - You are responsible for understanding every line of code that you submit in 131A. Exams may ask you to explain specific lines of code used in lab and HW solutions. So, don't use LLMs to write code without taking time to understanding the code.
-- Of course, LLMs cannot be used on exams. 
+- Of course, LLMs cannot be used on exams.  -->
 
-It is often easy to spot default LLM text output. 
+<!-- It is often easy to spot default LLM text output. 
 
 - If you copy and paste answers directly from PingPong, be warned that your grader may interpret your answer as lacking in effort and **you may lose points on the assignment.**
-- Take the time to understand and paraphrase the information LLMs provide you.
+- Take the time to understand and paraphrase the information LLMs provide you. -->
 
 <!-- Many coding problems from past iterations of the course can now be fully solved by freely-available LLMs. -->
 <!-- With this advantange in mind, the difficulty and extent of coding required for this course may be increased substantially compared to previous years.  -->
@@ -399,13 +423,13 @@ We are excited to hear what you find.
 
 ## Course communication 🗣️
 
-We use the [Ed platform](https://edstem.org/us/courses/63606/discussion/) to manage course questions and discussion, and to make announcements.
+We use the [Ed platform](https://edstem.org/us/courses/104001/discussion/8207854) to manage course questions and discussion, and to make announcements.
 
-In general, **do not email the course staff.**
+In general, **do not email the instructor or course staff.**
 
 -   Exception: You are welcome to email individual members of the course staff if you have a private concern that you do not want shared with the entire course staff.
 
-Please post publicly when possible.
+Please post on Ed publicly when possible.
 
 - **Public posts benefit many more students than private posts.**
 - We may ask you to change your private post to a public post if the answer could be of use to other students.
@@ -444,7 +468,7 @@ The official course materials use the [R](http://www.r-project.org/) programming
 <!-- We extensively use the suite of [tidyverse](https://www.tidyverse.org/) packages. -->
 <!-- While you are free to use a programming language of your choice, the course staff can only guarantee assistance with code written in `R`. -->
 
-- As in Data 8 and Stat 20, labs and assignments will be distributed via [DataHub](https://r.datahub.berkeley.edu).
+- As in Data 8 and Stat 20, labs and assignments will be distributed via [DataHub](https://stat.datahub.berkeley.edu/).
 
 **You do not need to know anything about `R` to take this course.**
 
@@ -484,10 +508,9 @@ Bootstrapping.
 
 Week 5.
 Confidence intervals.
-Parametric hypothesis testing. 
 [3](https://epurdom.github.io/Stat131A/book/comparing-groups-and-hypothesis-testing.html).   
 
-Week 6.
+Weeks 6 and 7.
 Non-parametric hypothesis testing.
 Type I and II errors.
 Power. 
@@ -495,18 +518,13 @@ Study design.
 Multiple testing. 
 [3](https://epurdom.github.io/Stat131A/book/comparing-groups-and-hypothesis-testing.html).
 
-Week 7.
-Midterm 1 (Weeks 1-5).
-Linear regression.
-[4.1-4.3](https://epurdom.github.io/Stat131A/book/curve-fitting.html), [6](https://epurdom.github.io/Stat131A/book/multiple-regression.html)
-
-Week 8.
-More linear regression.
+Weeks 8 and 9.
+Linear regression. 
 Feature generation.
 Transformations.
-[6](https://epurdom.github.io/Stat131A/book/multiple-regression.html)
+[4.1-4.3](https://epurdom.github.io/Stat131A/book/curve-fitting.html), [6](https://epurdom.github.io/Stat131A/book/multiple-regression.html)
 
-Week 9.
+Weeks 10, 11, and 12.
 Cross-validation.
 Bias-variance tradeoff.
 Logistic regression.
@@ -514,37 +532,22 @@ Classification error metrics.
 [7](https://epurdom.github.io/Stat131A/book/logistic-regression.html)
 [7.5](https://epurdom.github.io/Stat131A/book/logistic-regression.html#classification-using-logistic-regression)
 
-Week 10.
-Buffer for Week 1-9 catch-up.
-
-Week 11.
+Weeks 13 and 14.
 Intro to non-parametric methods.
 Kernel density estimation (KDE).
 LOESS. 
+Clustering.
+Causal inference.
 [2.5](https://epurdom.github.io/Stat131A/book/data-distributions.html#density-curve-estimation).
 [4.4-4.5](https://epurdom.github.io/Stat131A/book/visualizing-multivariate-data.html#principal-components-analysis) 
 
-Week 12.
-Midterm 2 (Weeks 1-10).
-Principle components analysis (PCA).
-Clustering.
-[5.4](https://epurdom.github.io/Stat131A/book/curve-fitting.html#principle-components-analysis)
-
-Week 13.
-Decision trees.
-Random Forests.
-[8](https://epurdom.github.io/Stat131A/book/regression-and-classification-trees.html) 
-
-Week 14.
-Buffer for Week 10-13 catch-up.
-
 Week 15.
 Most likely, catch-up and review.
-If time permits, intro to causal inference.
+If time permits, decision trees and random forests.
 
 ## Academic Honesty Policy 👍
 
-Homework and projects must be completed independently, with the following exceptions:
+Homework must be completed independently, with the following exceptions:
 
 - You may discuss specific issues/questions you have about the homework at a high level, but you must not sit down and do the assignment jointly.
 - Giving advice about code or coding tips is also not cheating, but you can not directly share code with other classmates.
@@ -556,7 +559,7 @@ Requesting, obtaining, and/or using solutions from previous years or from the in
 In fairness to students who put in an honest effort, cheaters will be harshly treated.
 
 - **Any evidence of cheating will result in a score of zero (0) on the entire assignment or examination, and perhaps a failing grade in the class.**
-- We will always report incidences of cheating to the Office of Student Conduct, which may administer additional punishment.
+- We will report incidences of cheating to the Office of Student Conduct, which may administer additional punishment.
 
 ## Accommodations 💙
 
@@ -572,7 +575,7 @@ UC Berkeley is committed to creating a learning environment that meets the needs
 If you have a disability, or think you may have a disability, you can work with the Disabled Students' Program (DSP) to determine any accommodations you may need to have equal access in this course. 
 
 - The Disabled Students' Program (DSP) is the campus office responsible for authorizing disability-related academic accommodations, in cooperation with the students themselves and their instructors. 
-- You can find more information about the DSP application process [here](https://dsp.berkeley.edu/students/new-students/application-process). 
+- You can find more information about the DSP application process [here](https://edstem.org/us/courses/104001/discussion/8207854). 
 - Josh is available if you have any questions or concerns about your accommodations.
 - In the event of a disagreement, the proper procedure is for you to work with your DSP Specialist and your DSP Specialist to work with Josh toward a resolution.
 
