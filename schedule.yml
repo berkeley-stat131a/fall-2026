@@ -6,18 +6,18 @@
       id: '1'
       name: Welcome
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1E5kHtRuCvKPZ5EqzZY1Pu20bZq-QzHiSVwUtYo42IFQ/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1snje9uy-cMmTTPyqhGNliipJvMk9RnETZSihB3e_Sgs/edit
+      # - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1Dv6JYttK1Yh4xXO8X_QClVpEZVr7zt_doZlw3JDgIIs/edit?usp=sharing
+  - date: Thu Aug 27
+    items: 
     - type: HW
       id: '1'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 1 (TBD)
         # href: '#'
-  - date: Thu Aug 27
-    items: []
   - date: Fri Aug 28
     items:
     - type: Lecture
@@ -99,7 +99,7 @@
       id: ' (Labor Day)'
     - type: HW
       id: '2'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 2 (TBD)
         # href: '#'
@@ -144,7 +144,7 @@
         # href: https://docs.google.com/presentation/d/1jcPDtLUZcBIEKoc3IpiRSN3_jZkP6I9CMHLlGwmgrlU/edit?usp=sharing
     - type: HW
       id: '3'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 3 (TBD)
         # href: '#'
@@ -200,7 +200,7 @@
         # href: https://docs.google.com/presentation/d/1y3LPugdCQm40XFySyZbmUyLgeu0W9NBFDPgodGzKZnM/edit?usp=sharing
     - type: HW
       id: '4'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 4 (TBD)
         # href: '#'
@@ -292,7 +292,7 @@
         # href: https://docs.google.com/presentation/d/1QekZ_RxsgMBCvP-PEJ9Imc7zLVySKP-aD8qUUEa2b7k/edit?usp=sharing
     - type: HW
       id: '5'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 5 (TBD)
         # href: '#'
@@ -352,7 +352,7 @@
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '6'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 6 (TBD)
         # href: '#'
@@ -406,7 +406,7 @@
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '7'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 7 (TBD)
         # href: '#'
@@ -463,7 +463,7 @@
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '8'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 8 (TBD)
         # href: '#'
@@ -540,7 +540,7 @@
         # href: https://docs.google.com/presentation/d/1aTrY-Nj3UInr7C7tre-OW0_05dYvDQvpELGQhP4TNkg/edit?usp=sharing
     - type: HW
       id: '9'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 9 (TBD)
         # href: '#'
@@ -549,7 +549,7 @@
   - date: Wed Nov 11
     items:
     - type: Holiday
-      id: ' (Veterans Day No Instruction)'
+      id: ' (Veterans Day)'
   - date: Thu Nov 12
     items: []
   - date: Fri Nov 13
@@ -571,7 +571,7 @@
       name: Causal Inference I
     - type: HW
       id: '10'
-      name: RELEASED
+      name: Released (tentative)
       auxil:
       - id: Homework 10 (TBD)
         # href: '#'

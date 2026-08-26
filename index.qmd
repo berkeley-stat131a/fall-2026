@@ -13,25 +13,23 @@ listing:
 ::: {#buttons}
 :::
 
-**All information on the course website is subject to change as long as this message is visible!**
+****
 
-<!-- ::: {.callout-note title="Welcome to Week 2"} -->
+::: {.callout-note title="All information on the course website is subject to change as long as this message is visible!"}
 
 <!-- Things are picking up now. -->
 
-<!-- ::: -->
+:::
 
-[Concept check form](https://docs.google.com/forms/d/e/1FAIpQLScnthLeOwlfNrkCJ69LWgWnmaA-qTNcbtxrHgMmWD4LCZVNug/viewform?usp=sf_link)\
+[Concept check form](https://docs.google.com/forms/d/e/1FAIpQLScnthLeOwlfNrkCJ69LWgWnmaA-qTNcbtxrHgMmWD4LCZVNug/viewform?usp=sf_link) (if you arrive to lecture a couple minutes late)\
 
 ## Announcements 📣
 
-None for now.
+If you have DSP Accommodations, [register them ASAP](https://dsp.berkeley.edu/students/policies/accommodations-requesting-letters-accommodation).
 
-<!-- The final exam is Thursday, December 19th at 3pm in GPBB 100. -->
+Read the [syllabus](https://stat131a.berkeley.edu/fall-2026/syllabus.html).
 
-<!-- Please [complete your STAT 131A course evalulation](https://course-evaluations.berkeley.edu)! -->
-
-<!-- - With just a couple minutes of your time, you can provide incredibly valuable feedback to Van and Josh. -->
+<!-- None for now. -->
 
 ## Schedule 📅
 
