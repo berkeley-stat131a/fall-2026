@@ -26,6 +26,34 @@ table {
     border: 2px solid;
 }
 
+/* Keep all entries for one date visually grouped as a single table row. */
+.table > tbody > tr.schedule-date-row-continued > td {
+    border-bottom: 0;
+}
+
+.table > tbody > tr.schedule-date-highlight > th {
+    background-color: rgba(255, 220, 100, 0.28);
+}
+
+.schedule-jump-button {
+    margin-bottom: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #4767ff;
+    border-radius: 0.35rem;
+    background: transparent;
+    color: #4767ff;
+    font-weight: 600;
+}
+
+.schedule-jump-button:hover,
+.schedule-jump-button:focus {
+    background: rgba(71, 103, 255, 0.1);
+}
+
+.schedule-week-heading {
+    scroll-margin-top: 1rem;
+}
+
 button > a {
     color: white;
     text-decoration: none;
@@ -39,4 +67,3 @@ button {
   color:#069;
   font-weight: bold;
 }
-

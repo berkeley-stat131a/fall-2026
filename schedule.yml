@@ -16,6 +16,8 @@
       auxil:
       - id: Homework 1 (TBD)
         # href: '#'
+  - date: Thu Aug 27
+    items: []
   - date: Fri Aug 28
     items:
     - type: Lecture
@@ -41,13 +43,13 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: Exam
-      id: Prerequisite Quiz
-      name: Available today
+      id: ''
+      name: Prerequisite quiz offered today in CBTF
   - date: Tue Sep 1
     items:
     - type: Exam
-      id: Prerequisite Quiz
-      name: Available today
+      id: ''
+      name: Prerequisite quiz offered today in CBTF
   - date: Wed Sep 2
     items:
     - type: Lecture
@@ -61,13 +63,13 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: Exam
-      id: Prerequisite Quiz
-      name: Available today
+      id: ''
+      name: Prerequisite quiz offered today in CBTF
   - date: Thu Sep 3
     items:
     - type: Exam
-      id: Prerequisite Quiz
-      name: Available today
+      id: ''
+      name: Prerequisite quiz offered today in CBTF
   - date: Fri Sep 4
     items:
     - type: Lecture
@@ -83,9 +85,12 @@
     - type: HW
       id: '1'
       name: DUE
+      auxil:
+      - id: Homework 1 (TBD)
+        # href: '#'
     - type: Exam
-      id: Prerequisite Quiz
-      name: Available today
+      id: ''
+      name: Prerequisite quiz offered today in CBTF
 - week: 3
   days:
   - date: Mon Sep 7
@@ -98,6 +103,8 @@
       auxil:
       - id: Homework 2 (TBD)
         # href: '#'
+  - date: Tue Sep 8
+    items: []
   - date: Wed Sep 9
     items:
     - type: Lecture
@@ -110,6 +117,8 @@
         # href: https://docs.google.com/presentation/d/18bbc9n6BT5LenqUeHVszcfevOpstNYJ14rKJqgEuUtM/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Thu Sep 10
+    items: []
   - date: Fri Sep 11
     items:
     - type: Lecture
@@ -118,6 +127,9 @@
     - type: HW
       id: '2'
       name: DUE
+      auxil:
+      - id: Homework 2 (TBD)
+        # href: '#'
 - week: 4
   days:
   - date: Mon Sep 14
@@ -136,6 +148,8 @@
       auxil:
       - id: Homework 3 (TBD)
         # href: '#'
+  - date: Tue Sep 15
+    items: []
   - date: Wed Sep 16
     items:
     - type: Lecture
@@ -150,6 +164,8 @@
         # href: https://docs.google.com/presentation/d/1ISrQnEeZal1nmfh7KGAS47N_AuGiJ7wKhGCoKSHtE4Y/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1N4GZYX_2g3SEXMiHFKkhC44GYm64x4NiySvLRlIK1ko/edit?usp=sharing
+  - date: Thu Sep 17
+    items: []
   - date: Fri Sep 18
     items:
     - type: Lecture
@@ -163,6 +179,9 @@
     - type: HW
       id: '3'
       name: DUE
+      auxil:
+      - id: Homework 3 (TBD)
+        # href: '#'
 - week: 5
   days:
   - date: Mon Sep 21
@@ -185,6 +204,8 @@
       auxil:
       - id: Homework 4 (TBD)
         # href: '#'
+  - date: Tue Sep 22
+    items: []
   - date: Wed Sep 23
     items:
     - type: Lecture
@@ -197,6 +218,8 @@
         # href: https://docs.google.com/presentation/d/1-JKmo6Vx0gWcoMQ-Y80pv8at-L5s9flCJOOZOj3KrfA/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Thu Sep 24
+    items: []
   - date: Fri Sep 25
     items:
     - type: Lecture
@@ -227,6 +250,8 @@
         # href: https://docs.google.com/presentation/d/14AavBfcdvJG9iYW0mb7XFy2-HbP9UqgGZJJHGMcM5Ks/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Tue Sep 29
+    items: []
   - date: Wed Sep 30
     items:
     - type: Lecture
@@ -240,15 +265,18 @@
     - type: HW
       id: '4'
       name: DUE
+      auxil:
+      - id: Homework 4 (TBD)
+        # href: '#'
   - date: Thu Oct 1
     items:
     - type: Exam
-      id: MT1
+      id: ''
       name: Midterm 1 in CBTF offered today
   - date: Fri Oct 2
     items:
     - type: Exam
-      id: MT1
+      id: ''
       name: Midterm 1 in CBTF offered today
 - week: 7
   days:
@@ -268,6 +296,8 @@
       auxil:
       - id: Homework 5 (TBD)
         # href: '#'
+  - date: Tue Oct 6
+    items: []
   - date: Wed Oct 7
     items:
     - type: Lecture
@@ -281,12 +311,12 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: Exam
-      id: MT1 R
+      id: ''
       name: Midterm 1 retake in CBTF offered today
   - date: Thu Oct 8
     items:
     - type: Exam
-      id: MT1 R
+      id: ''
       name: Midterm 1 retake in CBTF offered today
   - date: Fri Oct 9
     items:
@@ -303,6 +333,9 @@
     - type: HW
       id: '5'
       name: DUE
+      auxil:
+      - id: Homework 5 (TBD)
+        # href: '#'
 - week: 8
   days:
   - date: Mon Oct 12
@@ -323,6 +356,8 @@
       auxil:
       - id: Homework 6 (TBD)
         # href: '#'
+  - date: Tue Oct 13
+    items: []
   - date: Wed Oct 14
     items:
     - type: Lecture
@@ -335,6 +370,8 @@
         # href: https://docs.google.com/presentation/d/18A6Medao9c8htha2DTZS_PqIR7hpP5ZJV77dLn85E5w/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Thu Oct 15
+    items: []
   - date: Fri Oct 16
     items:
     - type: Lecture
@@ -350,6 +387,9 @@
     - type: HW
       id: '6'
       name: DUE
+      auxil:
+      - id: Homework 6 (TBD)
+        # href: '#'
 - week: 9
   days:
   - date: Mon Oct 19
@@ -370,6 +410,8 @@
       auxil:
       - id: Homework 7 (TBD)
         # href: '#'
+  - date: Tue Oct 20
+    items: []
   - date: Wed Oct 21
     items:
     - type: Lecture
@@ -382,6 +424,8 @@
         # href: https://docs.google.com/presentation/d/1IZUZiAMIWBvdWaCWpgtED8m7jEwKzh1ZFtzYnMCXkII/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Thu Oct 22
+    items: []
   - date: Fri Oct 23
     items:
     - type: Lecture
@@ -390,17 +434,20 @@
     - type: HW
       id: '7'
       name: DUE
+      auxil:
+      - id: Homework 7 (TBD)
+        # href: '#'
 - week: 10
   days:
   - date: Mon Oct 26
     items:
     - type: Exam
-      id: MT2
+      id: ''
       name: Midterm 2 in CBTF offered today
   - date: Tue Oct 27
     items:
     - type: Exam
-      id: MT2
+      id: ''
       name: Midterm 2 in CBTF offered today
   - date: Wed Oct 28
     items:
@@ -420,6 +467,8 @@
       auxil:
       - id: Homework 8 (TBD)
         # href: '#'
+  - date: Thu Oct 29
+    items: []
   - date: Fri Oct 30
     items:
     - type: Lecture
@@ -438,12 +487,12 @@
       id: '27'
       name: Linear probability models
     - type: Exam
-      id: MT2 R
+      id: ''
       name: Midterm 2 retake in CBTF offered today
   - date: Tue Nov 3
     items:
     - type: Exam
-      id: MT2 R
+      id: ''
       name: Midterm 2 retake in CBTF offered today
   - date: Wed Nov 4
     items:
@@ -457,6 +506,8 @@
         # href: https://docs.google.com/presentation/d/1iJjcs4wtiUPkm-awr5Wip_5yEuhythKB_Hb8RD643cI/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+  - date: Thu Nov 5
+    items: []
   - date: Fri Nov 6
     items:
     - type: Lecture
@@ -472,6 +523,9 @@
     - type: HW
       id: '8'
       name: DUE
+      auxil:
+      - id: Homework 8 (TBD)
+        # href: '#'
 - week: 12
   days:
   - date: Mon Nov 9
@@ -490,10 +544,14 @@
       auxil:
       - id: Homework 9 (TBD)
         # href: '#'
+  - date: Tue Nov 10
+    items: []
   - date: Wed Nov 11
     items:
     - type: Holiday
       id: ' (Veterans Day No Instruction)'
+  - date: Thu Nov 12
+    items: []
   - date: Fri Nov 13
     items:
     - type: Lecture
@@ -520,11 +578,18 @@
     - type: HW
       id: '9'
       name: DUE
+      auxil:
+      - id: Homework 9 (TBD)
+        # href: '#'
+  - date: Tue Nov 17
+    items: []
   - date: Wed Nov 18
     items:
     - type: Lecture
       id: '33'
       name: Causal Inference II
+  - date: Thu Nov 19
+    items: []
   - date: Fri Nov 20
     items:
     - type: Lecture
@@ -552,7 +617,18 @@
     - type: HW
       id: '10'
       name: DUE
+      auxil:
+      - id: Homework 10 (TBD)
+        # href: '#'
   - date: Wed Nov 25
+    items:
+    - type: Holiday
+      id: ' (Thanksgiving)'
+  - date: Thu Nov 26
+    items:
+    - type: Holiday
+      id: ' (Thanksgiving)'
+  - date: Fri Nov 27
     items:
     - type: Holiday
       id: ' (Thanksgiving)'
@@ -566,15 +642,17 @@
       auxil:
       - id: Practice problems on bcourses (TBD)
         # href: '#'
+  - date: Tue Dec 1
+    items: []
   - date: Wed Dec 2
     items:
     - type: Exam
-      id: MT3
+      id: ''
       name: Midterm 3 in CBTF offered today
   - date: Thu Dec 3
     items:
     - type: Exam
-      id: MT3
+      id: ''
       name: Midterm 3 in CBTF offered today
   - date: Fri Dec 4
     items:
@@ -591,10 +669,10 @@
   - date: Mon Dec 7
     items:
     - type: Exam
-      id: MT3 R
+      id: ''
       name: Midterm 3 retake in CBTF offered today
   - date: Tue Dec 8
     items:
     - type: Exam
-      id: MT3 R
+      id: ''
       name: Midterm 3 retake in CBTF offered today

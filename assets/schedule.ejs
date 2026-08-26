@@ -1,8 +1,10 @@
 ```{=html}
 
+<button type="button" id="jump-to-current-week" class="schedule-jump-button">Jump to this week</button>
+
 <% for (const item of items) { %>
 
-   <h4>Week <%- item.week %></h4>
+   <h4 id="schedule-week-<%- item.week %>" class="schedule-week-heading">Week <%- item.week %></h4>
 
    <table class="table" data-quarto-disable-processing="true">
    <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
@@ -11,16 +13,24 @@
    <tbody>
    <% for (const day of item.days) { %>
 
+        <% if (day.items.length === 0) { %>
+           <tr class="schedule-date-row schedule-date-row-empty" data-schedule-date="<%- day.date %> 2026">
+             <th scope="row"><%- day.date %>:</th>
+             <td></td>
+             <td></td>
+           </tr>
+        <% } %>
+
         <% for (let i = 0; i < day.items.length; i++) { %>
 
 
 
-           <tr>
+           <tr class="schedule-date-row<% if (i < day.items.length - 1) { %> schedule-date-row-continued<% } %>" data-schedule-date="<%- day.date %> 2026">
            <% if (i == 0) { %>
            <th scope="row" rowspan="<%- day.items.length %>"><%- day.date %>:</th>
            <% } %>
            <td>
-               <strong class="label label-<%- day.items[i].type %>"><%- day.items[i].type %> <%- day.items[i].id %></strong>
+               <strong class="label label-<%- day.items[i].type %>"><%- day.items[i].type %><% if (day.items[i].id) { %> <%- day.items[i].id %><% } %></strong>
                <% if (day.items[i].href && day.items[i].href !== "#") { %>
                  <a href="<%- day.items[i].href %>"><%- day.items[i].name %></a>
                <% } else { %>
@@ -49,5 +59,50 @@
   
 
 <% } %>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dateRows = Array.from(document.querySelectorAll("tr.schedule-date-row[data-schedule-date]"));
+  if (dateRows.length === 0) return;
+
+  const uniqueDateRows = dateRows.filter((row, index) =>
+    index === 0 || row.dataset.scheduleDate !== dateRows[index - 1].dataset.scheduleDate
+  );
+  const dates = uniqueDateRows.map((row) => {
+    const date = new Date(row.dataset.scheduleDate + " 00:00:00");
+    date.setHours(0, 0, 0, 0);
+    return date;
+  });
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let highlightIndex = dates.findIndex((date) => date.getTime() === today.getTime());
+  if (highlightIndex === -1 && today < dates[0]) highlightIndex = 0;
+  if (highlightIndex >= 0 && today <= dates[dates.length - 1]) {
+    uniqueDateRows[highlightIndex].classList.add("schedule-date-highlight");
+  }
+
+  const jumpButton = document.getElementById("jump-to-current-week");
+  const weekHeadings = Array.from(document.querySelectorAll(".schedule-week-heading"));
+  jumpButton.addEventListener("click", () => {
+    const currentWeek = weekHeadings.find((heading) => {
+      const table = heading.nextElementSibling;
+      const rows = Array.from(table.querySelectorAll("tr.schedule-date-row[data-schedule-date]"));
+      if (rows.length === 0) return false;
+
+      const firstDate = new Date(rows[0].dataset.scheduleDate + " 00:00:00");
+      const weekStart = new Date(firstDate);
+      weekStart.setDate(firstDate.getDate() - ((firstDate.getDay() + 6) % 7));
+      weekStart.setHours(0, 0, 0, 0);
+      const weekEnd = new Date(weekStart);
+      weekEnd.setDate(weekStart.getDate() + 6);
+      weekEnd.setHours(23, 59, 59, 999);
+      return today >= weekStart && today <= weekEnd;
+    });
+
+    if (currentWeek) currentWeek.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+</script>
 
 ```
