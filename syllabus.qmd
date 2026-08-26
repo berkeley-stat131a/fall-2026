@@ -5,7 +5,7 @@ editor:
     wrap: sentence
 ---
 
-[All information in the syllabus is subject to change as long as this message is visible!]
+**All information in the syllabus is subject to change as long as this message is visible!**
 
 **Students in Stat 131A are expected to have read the syllabus in its entirety by the second week of the course.**
 
@@ -41,7 +41,7 @@ Josh's Office Hours:
 - Wednesdays 4-5pm (group tutoring), TBD
 - Wednesdays 5-6pm (office hours), TBD
 - Fridays 9am-11am on Zoom
-- For security reasons, Zoom links for OH are posted on [bcourses](https://bcourses.berkeley.edu/courses/1537932).
+- For security reasons, Zoom links for OH are posted on [bcourses](https://bcourses.berkeley.edu/courses).
 
 20-minute coffee chats with Josh on the phone (experimental!):
 
@@ -54,7 +54,7 @@ Josh's Office Hours:
 <!-- - Please note that there are no regular OH during the first week of class. -->
 <!-- We may add or reschedule OH if needed.  -->
 
-<!-- - Please [create a private Ed post](https://edstem.org/us/courses/63606/discussion/) if you have conflicts with all of the scheduled OH.  -->
+<!-- - Please [create a private Ed post](https://edstem.org/us/dashboard) if you have conflicts with all of the scheduled OH.  -->
 
 **Coming to office hours does not send a signal that you are behind or need extra help.** In fact, the students who come to OH are often the most successful in the course.
 
@@ -63,6 +63,10 @@ Josh's Office Hours:
 - Keep in mind that you **do not** need to come to office hours with an agenda. Listening in is welcomed and encouraged!
 - Finally, attending and participating in office hours is a great way to set yourself up for a terrific **letter of recommendation**. This is true for most courses!
 - If you don't already, I highly recommend that you attend the instructors' office hours in other classes from time to time.
+
+### Optional (and free!) Group Tutoring 🗓️
+
+More information coming soon. Starting in Week 2 or 3.
 
 <!-- ## Study groups 👥
 
@@ -79,18 +83,18 @@ Concurrent enrollment students wishing to register for the class should fill out
 
 **UPDATE**: Stat 131A will not be enrolling concurrent enrollment students in Fall 2024. But, concurrent enrollment students are welcome to audit the course.
 
-Students who wish to audit the course can also fill out the top portion of this form to get their email added to [bcourses](https://bcourses.berkeley.edu/courses/1537932) as a guest. 
+Students who wish to audit the course can also fill out the top portion of this form to get their email added to [bcourses](https://bcourses.berkeley.edu/courses) as a guest. 
 Only name and email is needed for auditors. -->
 
 ## Course platforms 🖥️
 
-[bcourses](https://bcourses.berkeley.edu/courses/1537932) will only be used for secure course material, like exam solutions, grades, and office hour Zoom links.
+[bcourses](https://bcourses.berkeley.edu/courses) will only be used for secure course material, like exam solutions, grades, and office hour Zoom links.
 
 All other course materials will be posted on [the public course homepage](https://stat131a.berkeley.edu/fall-2026).
 
-Assignments should be submitted via [Pensive](https://www.pensive.com/teacher/classes/stat131a_fa26).
+Assignments should be submitted via [Pensive](https://www.pensive.com).
 
-All course communication will take place via [Ed](https://edstem.org/us/courses/104001/discussion).
+All course communication will take place via [Ed](https://edstem.org/us/dashboard).
 
 <!-- The only acceptable large-language model (LLM) for use in Stat 131a is [PingPong](https://pingpong.hks.harvard.edu/login).  -->
 
@@ -139,7 +143,7 @@ Most lectures will consist of an interactive problem-solving session, along with
 Lectures will be recorded automatically.
 
 - The course staff cannot guarantee audio or video quality.
-- Lecture recordings are posted on [bcourses](https://bcourses.berkeley.edu/courses/1558712).
+- Lecture recordings are posted on [bcourses](https://bcourses.berkeley.edu/courses).
 
 Office hours are not recorded. 
 
@@ -169,16 +173,16 @@ Acceptable extenuating circumstances include:
 - Pre-planned collegiate athletic events in which you are a participant.
 - This list is not exhaustive. If you think an absence should be excused, [complete this form](https://docs.google.com/forms/d/e/1FAIpQLSfQLdZRc0fCGDp-4zwtwvcbbh5F2olKB7dx_qVrNKmsY43cxg/viewform?usp=sf_link) and explain your reasoning. We cannot guarantee that your absence will be excused, but we will be reasonable. 
 
-### Concept checks ✅
+### Concept checks (5% of grade) ✅
 
-We will use in-class concept checks and neighbor discussions to track attendance. 
+We will use in-class concept checks to track attendance. 
 
 - Concept checks are not graded.
 - Concept checks are answered via [this form](https://docs.google.com/forms/d/e/1FAIpQLScnthLeOwlfNrkCJ69LWgWnmaA-qTNcbtxrHgMmWD4LCZVNug/viewform?usp=sf_link).
 <!-- - However, when deciding borderline final grades, we may consider demonstrated effort on concept checks. -->
 - Submitting a concept check outside of standard lecture time is considered cheating and an honor code violation. We will use your seat number and submission time to validate that your responses were entered during lecture time. We reserve the right to photograph the lecture hall to verify attendance. 
 
-### Neighbor discussions 🗣️
+### Neighbor discussions (5% of grade + 2% bonus) 🗣️
 
 In addition to concept checks, there may be one or more neighbor discussions during each lecture.
 
@@ -189,11 +193,11 @@ To encourage discussion among all classmates, **we will award up to two percenta
 
 - The students with the highest number of unique neighbors will receive the full two percentage points of extra credit.
 - Everyone else will receive, at the minimum, a fraction of extra credit proportional to their number of unique neighbors.
-- For example, if you sit next to the same person all semester, you can receive full participation credit for neighbor discussions, but you will very little extra credit.
+- For example, if you sit next to the same person all semester, you can receive full participation credit for neighbor discussions, but you will earn very little extra credit.
 - The extra credit policy will only take effect if at least one student has spoken to at least 20 unique neighbors over the course of the semester.
-- As above, submitting a neighbor discussion answer outside of standard lecture time is considered cheating and an honor code violation.
+- As above, submitting a neighbor discussion answer outside of standard lecture time or a bogus neighbor discussion is considered cheating and an honor code violation.
 
-## Homework 📝
+## Homework (15% of grade) 📝
 
 There are 10 homework assignments planned, though the exact number may change.
 
@@ -203,7 +207,12 @@ There are 10 homework assignments planned, though the exact number may change.
 HW is generally due every week or two weeks.
 
 - Homework assignments will be posted to the course website at least one week before the HW deadline.
-- All homework assignments will be submitted via [Pensive](https://www.pensive.com/teacher/classes/berkeley_data89_fa26) and are due by 11:59 pm of the due date.
+- All homework assignments will be submitted via [Pensive](https://www.pensive.com) and are due by 11:59 pm of the due date.
+
+Homework is graded on completion.
+
+- However, your work must show a legitimate effort. You can't submit nonsense.
+- Sure, ChatGPT can finish your homework for you, but you will suffer on exams as a result. Beware!
 
 <!-- We will not drop your lowest-scoring homework assignment.
 
@@ -214,7 +223,7 @@ HW is generally due every week or two weeks.
 
 - It is critical to have empathy for the person who will be reviewing your work, whether a member of the course staff, another student providing feedback, or your future manager.  -->
 
-## Late HW ⏰
+### Late HW ⏰
 
 **You are allotted ten slip days for homework assignments.** 
 
@@ -289,6 +298,8 @@ Quizzes and midterms are all 50-minutes. They will take place in the [computer-b
 You will sign up for a slot on [PrairieTest](https://us.prairietest.com/).
 
 - We will announce when slots are available.
+
+- Exam slots are subject to availability. Once you are signed up for a particular slot, you are guaranteed that time. If a particular window is full, you will be unable to sign up for that day and time.
 
 ### Prerequisite Quiz (5% of grade)
 
@@ -423,7 +434,7 @@ We are excited to hear what you find.
 
 ## Course communication 🗣️
 
-We use the [Ed platform](https://edstem.org/us/courses/104001/discussion/8207854) to manage course questions and discussion, and to make announcements.
+We use the [Ed platform](https://edstem.org/us/dashboard) to manage course questions and discussion, and to make announcements.
 
 In general, **do not email the instructor or course staff.**
 
@@ -567,7 +578,8 @@ UC Berkeley is committed to creating a learning environment that meets the needs
 
 - If you anticipate or experience any barriers to learning in this course, please feel welcome to discuss your concerns with Josh, whether after class, in office hours, via Ed, or via email.
 
-**If you already have a Letter of Accommodation, please open a private [Ed post](https://edstem.org/us/courses/63606/discussion/) ASAP and attach your LoA.** 
+**If you already have a Letter of Accommodation, please open a private [Ed post](https://edstem.org/us/dashboard
+) ASAP and attach your LoA.** 
 
 - We can accommodate you more easily if you provide this information early in the semester.
 - We cannot guarantee that last-minute requests for accommodation will be provided.
@@ -575,7 +587,7 @@ UC Berkeley is committed to creating a learning environment that meets the needs
 If you have a disability, or think you may have a disability, you can work with the Disabled Students' Program (DSP) to determine any accommodations you may need to have equal access in this course. 
 
 - The Disabled Students' Program (DSP) is the campus office responsible for authorizing disability-related academic accommodations, in cooperation with the students themselves and their instructors. 
-- You can find more information about the DSP application process [here](https://edstem.org/us/courses/104001/discussion/8207854). 
+- You can find more information about the DSP application process [here](https://edstem.org/us/dashboard). 
 - Josh is available if you have any questions or concerns about your accommodations.
 - In the event of a disagreement, the proper procedure is for you to work with your DSP Specialist and your DSP Specialist to work with Josh toward a resolution.
 

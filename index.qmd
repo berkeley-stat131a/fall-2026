@@ -13,7 +13,7 @@ listing:
 ::: {#buttons}
 :::
 
-[All information on the course website is subject to change as long as this message is visible!]
+**All information on the course website is subject to change as long as this message is visible!**
 
 <!-- ::: {.callout-note title="Welcome to Week 2"} -->
 
@@ -24,6 +24,8 @@ listing:
 [Concept check form](https://docs.google.com/forms/d/e/1FAIpQLScnthLeOwlfNrkCJ69LWgWnmaA-qTNcbtxrHgMmWD4LCZVNug/viewform?usp=sf_link)\
 
 ## Announcements 📣
+
+None for now.
 
 <!-- The final exam is Thursday, December 19th at 3pm in GPBB 100. -->
 

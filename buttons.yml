@@ -1,9 +1,9 @@
 - button: Ed
-  link: https://edstem.org/us/courses/63606/discussion/
+  link: https://edstem.org/us/dashboard
   color: purple
 - button: DataHub
-  link: https://r.datahub.berkeley.edu
+  link: https://stat.datahub.berkeley.edu
   color: green
-- button: Gradescope
-  link: https://www.gradescope.com/courses/833089
+- button: Pensive
+  link: https://www.pensive.com
   color: orange

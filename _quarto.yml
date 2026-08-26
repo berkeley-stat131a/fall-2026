@@ -14,10 +14,10 @@ website:
     contents:
       - href: index.qmd
         text: Home / Schedule
-      - href: assignments.qmd
-        text: HW and Labs
-      - href: project.qmd
-        text: Project
+      # - href: assignments.qmd
+      #   text: HW
+      # - href: project.qmd
+      #   text: Project
       - href: syllabus.qmd
         text: Syllabus
       - href: staff.qmd
@@ -35,8 +35,8 @@ website:
       #   text: Labs
       # - href: assignments.qmd
       #   text: Assignments
-      - href: calendar.qmd
-        text: Google Calendar
+      # - href: calendar.qmd
+      #   text: Google Calendar
       # - href: license.qmd
       #   text: License
 
