@@ -20,8 +20,8 @@
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1knKWf8v94mOV03HR1FQSwFbj6yZz-vy_zCHTDhQSc7A/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://stat131a.berkeley.edu/fall-2024/assets/Lab00.html
+      - id: Lecture code (TBD)
+        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
 - week: 2
   days:
   - date: Mon Aug 31
