@@ -18,8 +18,8 @@
       id: '2'
       name: Principles of Visualization
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1knKWf8v94mOV03HR1FQSwFbj6yZz-vy_zCHTDhQSc7A/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1_i5kgBSmCoYQF2bB1jfGpZkL3pRWku54BDd5xxLqZVE/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
 - week: 2
@@ -32,16 +32,16 @@
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1q1YIQByBlg0u2z3O-14IsoXtSyJXLCShkZ7z9ONv2jo/edit?usp=sharing
-      - id: Worksheet (TBD)
+      # - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1ZYPptIm2kiwW1Y_TX5pLF5hzV6_6QewaHQQrHovh6EI/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '1'
-      name: Released (tentative)
+      name: Released
       auxil:
-      - id: Homework 1 (TBD)
-        # href: '#'
+      - id: Homework 1
+        href: '/assignment1.qmd'
     - type: Exam
       id: ''
       name: Prerequisite quiz offered today in CBTF
