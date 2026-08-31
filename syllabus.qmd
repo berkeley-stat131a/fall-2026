@@ -37,7 +37,7 @@ Josh's Office Hours:
 
 <!-- Van's Office Hours:
 
-- ~~Wednesdays 10am-12pm @ Evans 434~~
+- ~~~~Wednesdays 10am-12pm @ Evans 434~~~~
 - Wednesdays 4-5pm (group tutoring), TBD
 - Wednesdays 5-6pm (office hours), TBD
 - Fridays 9am-11am on Zoom
@@ -105,9 +105,9 @@ All course communication will take place via [Ed](https://edstem.org/us/dashboar
 
 Grades are calculated as follows:
 
--   Prerequisite Quiz: 5%
+-   ~~Prerequisite Quiz: 5%~~
 -   Lecture attendance and participation: 10% + up to 2% bonus for having a variety of neighbors in neighbor discussions
--   Homework: 15%
+-   Homework: ~~15%~~ 20%
 -   Midterm 1: 15%
 -   Midterm 2: 15%
 -   Midterm 3: 15%
@@ -122,7 +122,7 @@ Grades will not be curved.
 
 See attendance policy below for an opportunity to earn up to two percentage points of extra credit. 
 
-## Lecture technology policy ❌ 👩‍💻 $~$ ✅📱
+## Lecture technology policy ❌ 👩‍💻 $~~$ ✅📱
 
 Most lectures will consist of an interactive problem-solving session, along with a hands-on demo or coding session.
 
@@ -197,7 +197,7 @@ To encourage discussion among all classmates, **we will award up to two percenta
 - The extra credit policy will only take effect if at least one student has spoken to at least 20 unique neighbors over the course of the semester.
 - As above, submitting a neighbor discussion answer outside of standard lecture time or a bogus neighbor discussion is considered cheating and an honor code violation.
 
-## Homework (15% of grade) 📝
+## Homework (~~15%~~ 20% of grade) 📝
 
 There are 10 homework assignments planned, though the exact number may change.
 
@@ -291,9 +291,9 @@ The written final exam will take place on **Thursday December 17, 3-6pm**. Locat
 
 <!-- **If you cannot attend an exam due to an extenuating circumstance, please make a private Ed post ASAP to determine whether your circumstance qualifies for a make-up exam.** -->
 
-## Prerequisite Quiz and Midterms ⌛
+## ~~Prerequisite Quiz and~~ Midterms ⌛
 
-Quizzes and midterms are all 50-minutes. They will take place in the [computer-based testing facility (CBTF)](https://rtl.berkeley.edu/services-programs/computer-based-testing-facility-cbtf). 
+Midterms are all 50-minutes. They will take place in the [computer-based testing facility (CBTF)](https://rtl.berkeley.edu/services-programs/computer-based-testing-facility-cbtf). 
 
 You will sign up for a slot on [PrairieTest](https://us.prairietest.com/).
 
@@ -301,15 +301,17 @@ You will sign up for a slot on [PrairieTest](https://us.prairietest.com/).
 
 - Exam slots are subject to availability. Once you are signed up for a particular slot, you are guaranteed that time. If a particular window is full, you will be unable to sign up for that day and time.
 
-### Prerequisite Quiz (5% of grade)
+### ~~Prerequisite Quiz (5% of grade)~~
 
-The prerequisite quiz is scheduled for Week 2 (8/31-9/4).
+The prerequisite quiz has been cancelled. Homework is now worth 20% of your grade.
 
-- Once you score at least 85% on the prerequisite quiz, you will receive the full 5 percentage points for your final grade.
+~~The prerequisite quiz is scheduled for Week 2 (8/31-9/4).~~
 
-- The prerequisite quiz can be retaken more than once. Your score on the prerequisite quiz is the highest of all attempts.
+- ~~Once you score at least 85% on the prerequisite quiz, you will receive the full 5 percentage points for your final grade.~~
 
-- You can practice the prerequisite quiz on [PrairieLearn](https://us.prairielearn.com/).
+- ~~The prerequisite quiz can be retaken more than once. Your score on the prerequisite quiz is the highest of all attempts.~~
+
+- ~~You can practice the prerequisite quiz on [PrairieLearn](https://us.prairielearn.com/).~~
 
 ### Midterm 1 and Midterm 1 Retakes (15% of grade)
 
