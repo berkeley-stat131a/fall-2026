@@ -56,8 +56,8 @@
       id: '4'
       name: Probability I
       auxil:
-      - id: Abridged Slides
-        href: https://docs.google.com/presentation/d/1yPlAWWzjxNibmmEQ7ooFxAoBbcBj7c6XpC3ufazXGWs/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1qZYDRiimCmUWj9kVc9wSrG_Al8JeQUhEHQts1fAVSo0/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1tCtRC-Ize79irxJVl767XxxmnKaXL7ogDBpupCQBoSw/edit?usp=sharing
       # - id: Lecture code (TBD)
