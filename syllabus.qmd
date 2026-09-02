@@ -5,9 +5,9 @@ editor:
     wrap: sentence
 ---
 
-**All information in the syllabus is subject to change as long as this message is visible!**
+<!-- **All information in the syllabus is subject to change as long as this message is visible!** -->
 
-**Students in Stat 131A are expected to have read the syllabus in its entirety by the second week of the course.**
+<!-- **Students in Stat 131A are expected to have read the syllabus in its entirety by the second week of the course.** -->
 
 ## Course Details 🥗
 

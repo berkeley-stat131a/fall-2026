@@ -16,65 +16,65 @@
     items:
     - type: Lecture
       id: '2'
-      name: Principles of Visualization
+      name: EDA I
       auxil:
       - id: Slides
         href: https://docs.google.com/presentation/d/1_i5kgBSmCoYQF2bB1jfGpZkL3pRWku54BDd5xxLqZVE/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Lecture code
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
 - week: 2
   days:
   - date: Mon Aug 31
     items:
     - type: Lecture
       id: '3'
-      name: Boxplots and Histograms
+      name: EDA II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1q1YIQByBlg0u2z3O-14IsoXtSyJXLCShkZ7z9ONv2jo/edit?usp=sharing
-      # - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1ZYPptIm2kiwW1Y_TX5pLF5hzV6_6QewaHQQrHovh6EI/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1_hADqv9aYddk6mAnVJOQmfI8UZnQWO-LNccirTdeYoo/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1Jb6Ia-5kP5w4o71Q89yd-88fuY6u7Tcp3CpVPgm5g2A/edit?usp=sharing
+      - id: Lecture code
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
     - type: HW
       id: '1'
       name: Released
       auxil:
       - id: Homework 1
         href: '/assignment1.qmd'
-    - type: Exam
-      id: ''
-      name: Prerequisite quiz offered today in CBTF
+    # - type: Exam
+    #   id: ''
+    #   name: Prerequisite quiz offered today in CBTF
   - date: Tue Sep 1
-    items:
-    - type: Exam
-      id: ''
-      name: Prerequisite quiz offered today in CBTF
+    items: []
+    # - type: Exam
+    #   id: ''
+    #   name: Prerequisite quiz offered today in CBTF
   - date: Wed Sep 2
     items:
     - type: Lecture
       id: '4'
-      name: Distributions of Data
+      name: Probability I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1wBoMAOaq_WZ4N56vlyglohNEGDEG6AL0x_aLJr49c8s/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1V73RfDeS7jFx7r9Z3ephOVywYU-M1QmpqjS_EVwG6R8/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1yPlAWWzjxNibmmEQ7ooFxAoBbcBj7c6XpC3ufazXGWs/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1tCtRC-Ize79irxJVl767XxxmnKaXL7ogDBpupCQBoSw/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
-    - type: Exam
-      id: ''
-      name: Prerequisite quiz offered today in CBTF
+    # - type: Exam
+    #   id: ''
+    #   name: Prerequisite quiz offered today in CBTF
   - date: Thu Sep 3
-    items:
-    - type: Exam
-      id: ''
-      name: Prerequisite quiz offered today in CBTF
+    items: []
+    # - type: Exam
+    #   id: ''
+    #   name: Prerequisite quiz offered today in CBTF
   - date: Fri Sep 4
     items:
     - type: Lecture
       id: '5'
-      name: Data from Distributions
+      name: Probability II
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1IJ06_78Kny0X_op8xvHODflshMZ2H4qb8oVUVc07fpo/edit?usp=sharing
@@ -86,11 +86,11 @@
       id: '1'
       name: DUE
       auxil:
-      - id: Homework 1 (TBD)
-        # href: '#'
-    - type: Exam
-      id: ''
-      name: Prerequisite quiz offered today in CBTF
+      - id: Homework 1
+        href:  '/assignment1.qmd'
+    # - type: Exam
+    #   id: ''
+    #   name: Prerequisite quiz offered today in CBTF
 - week: 3
   days:
   - date: Mon Sep 7
@@ -109,7 +109,7 @@
     items:
     - type: Lecture
       id: '6'
-      name: Probability I
+      name: Probability III
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1bSGxF-Xk92Or9tc4kGXFPsMKJzUvvU0O6i-zLj_eL94/edit?usp=sharing
@@ -123,7 +123,7 @@
     items:
     - type: Lecture
       id: '7'
-      name: Probability II
+      name: Probability IV
     - type: HW
       id: '2'
       name: DUE

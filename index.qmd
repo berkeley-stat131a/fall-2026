@@ -15,11 +15,11 @@ listing:
 
 ****
 
-::: {.callout-note title="All information on the course website is subject to change as long as this message is visible!"}
+<!-- ::: {.callout-note title="All information on the course website is subject to change as long as this message is visible!"} -->
 
 <!-- Things are picking up now. -->
 
-:::
+<!-- ::: -->
 
 [Concept check form](https://docs.google.com/forms/d/e/1FAIpQLScnthLeOwlfNrkCJ69LWgWnmaA-qTNcbtxrHgMmWD4LCZVNug/viewform?usp=sf_link) (if you arrive to lecture a couple minutes late)\
 
@@ -27,7 +27,9 @@ listing:
 
 If you have DSP Accommodations, [register them ASAP](https://dsp.berkeley.edu/students/policies/accommodations-requesting-letters-accommodation).
 
-Read the [syllabus](https://stat131a.berkeley.edu/fall-2026/syllabus.html).
+<!-- Read the [syllabus](https://stat131a.berkeley.edu/fall-2026/syllabus.html). -->
+
+[Sign up](prairietest.com) for an optional 20-minute orientation quiz at the CBTF!
 
 <!-- None for now. -->
 
