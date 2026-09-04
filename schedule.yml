@@ -76,11 +76,11 @@
       id: '5'
       name: Probability II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1IJ06_78Kny0X_op8xvHODflshMZ2H4qb8oVUVc07fpo/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1dZS2TLNucnYLcw3-Ta2d48eo8DnDfk4gDJ_CNRk8k_s/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1B6LM6Rpj5MWYdgifxuyZZeraqXyLhx0nYegxaTfAYUo/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1zP43cjjt4kmUWcZa01l_VtzsEeICcoBVBPPi6WsyXH0/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://github.com/berkeley-stat131a/131a-lecture-code
     - type: HW
       id: '1'
