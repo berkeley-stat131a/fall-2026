@@ -76,8 +76,8 @@
       id: '5'
       name: Probability II
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1B6LM6Rpj5MWYdgifxuyZZeraqXyLhx0nYegxaTfAYUo/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1JsBqJ4R42Uql6YlpIqffXHmTyFDpQI8fN5qrn1HM8QM/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1zP43cjjt4kmUWcZa01l_VtzsEeICcoBVBPPi6WsyXH0/edit?usp=sharing
       # - id: Lecture code (TBD)
@@ -97,11 +97,11 @@
     items:
     - type: Holiday
       id: ' (Labor Day)'
-    - type: HW
-      id: '2'
-      name: Released (tentative)
-      auxil:
-      - id: Homework 2 (TBD)
+    # - type: HW
+    #   id: '2'
+    #   name: Released (tentative)
+    #   auxil: []
+      # - id: Homework 2 (TBD)
         # href: '#'
   - date: Tue Sep 8
     items: []
@@ -111,11 +111,11 @@
       id: '6'
       name: Probability III
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1bSGxF-Xk92Or9tc4kGXFPsMKJzUvvU0O6i-zLj_eL94/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1d6sr0F3qCtYu_Fjh3Byndl9w3WJC5k7OASTg9OwPoPA/edit?usp=sharing
+      # - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/18bbc9n6BT5LenqUeHVszcfevOpstNYJ14rKJqgEuUtM/edit?usp=sharing
-      - id: Lecture code (TBD)
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
   - date: Thu Sep 10
     items: []
@@ -124,12 +124,12 @@
     - type: Lecture
       id: '7'
       name: Probability IV
-    - type: HW
-      id: '2'
-      name: DUE
-      auxil:
-      - id: Homework 2 (TBD)
-        # href: '#'
+    # - type: HW
+    #   id: '2'
+    #   name: DUE
+    #   auxil:
+    #   - id: Homework 2 (TBD)
+    #     # href: '#'
 - week: 4
   days:
   - date: Mon Sep 14
