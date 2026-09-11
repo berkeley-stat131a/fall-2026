@@ -123,7 +123,12 @@
     items:
     - type: Lecture
       id: '7'
-      name: Probability IV
+      name: Parallel Universes
+      auxil:
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1YQcGAci6MaAn0XdOEKUTG7xOSGdPfuGNgFgf8SjV5pg/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1jx7P5TUDCvp2ZniY5FTUxU0-7jBaRGahiJAMxCxzuGo/edit?usp=sharing
     # - type: HW
     #   id: '2'
     #   name: DUE
