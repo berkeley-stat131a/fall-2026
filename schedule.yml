@@ -148,11 +148,11 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1jcPDtLUZcBIEKoc3IpiRSN3_jZkP6I9CMHLlGwmgrlU/edit?usp=sharing
     - type: HW
-      id: '3'
-      name: Released (tentative)
+      id: '2'
+      name: Released
       auxil:
-      - id: Homework 3 (TBD)
-        # href: '#'
+      - id: Homework 2
+        href: 'assignment2.html'
   - date: Tue Sep 15
     items: []
   - date: Wed Sep 16
@@ -182,11 +182,11 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1DyAqn8CmhxCeMxELP20iofjhpivoXpqnUqLkYekFeTk/edit?usp=sharing
     - type: HW
-      id: '3'
+      id: '2'
       name: DUE
       auxil:
-      - id: Homework 3 (TBD)
-        # href: '#'
+      - id: Homework 2
+        href: '/assignment2.html'
 - week: 5
   days:
   - date: Mon Sep 21

@@ -27,9 +27,11 @@ listing:
 
 If you have DSP Accommodations, [register them ASAP](https://dsp.berkeley.edu/students/policies/accommodations-requesting-letters-accommodation).
 
+HW2 is released. Due Friday 9/13.
+
 <!-- Read the [syllabus](https://stat131a.berkeley.edu/fall-2026/syllabus.html). -->
 
-[Sign up](prairietest.com) for an optional 20-minute orientation quiz at the CBTF!
+<!-- [Sign up](prairietest.com) for an optional 20-minute orientation quiz at the CBTF! -->
 
 <!-- None for now. -->
 
