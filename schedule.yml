@@ -141,7 +141,7 @@
     items:
     - type: Lecture
       id: '8'
-      name: Parallel Universes
+      name: Sampling distributions I
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1Sv1xyeuvakhXlWuSOURbYJEgK-LvkShDpz86zaMJ1-o/edit?usp=sharing
@@ -159,7 +159,7 @@
     items:
     - type: Lecture
       id: '9'
-      name: Sampling distributions I
+      name: Sampling distributions II
       auxil:
       - id: Demo (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-shiny-demos&urlpath=rstudio%2F
@@ -175,7 +175,7 @@
     items:
     - type: Lecture
       id: '10'
-      name: Sampling distributions II
+      name: Sampling distributions III
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1lJkcOuAmJ4OCKS2DO-0dQFzdaNod9kTKFv6i3HRkziU/edit?usp=sharing
