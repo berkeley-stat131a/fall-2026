@@ -125,8 +125,8 @@
       id: '7'
       name: Parallel Universes
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1YQcGAci6MaAn0XdOEKUTG7xOSGdPfuGNgFgf8SjV5pg/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/15kafgEJwwJY9N0By1VbQ_RFZ2fijDmQAafvd06VlpXI/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1jx7P5TUDCvp2ZniY5FTUxU0-7jBaRGahiJAMxCxzuGo/edit?usp=sharing
     # - type: HW
@@ -143,10 +143,12 @@
       id: '8'
       name: Sampling distributions I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1Sv1xyeuvakhXlWuSOURbYJEgK-LvkShDpz86zaMJ1-o/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1jcPDtLUZcBIEKoc3IpiRSN3_jZkP6I9CMHLlGwmgrlU/edit?usp=sharing
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/19yzndBdH8-oz30s44t-onnt_XT3mLVS8UL5418cYefI/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1BAvBvjjMeKCLkYyS77tS1MpgqCUm57MkNAfbpQVRNzM/edit?usp=sharing
+      - id: Demo
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
     - type: HW
       id: '2'
       name: Released
