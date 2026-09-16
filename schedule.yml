@@ -141,10 +141,10 @@
     items:
     - type: Lecture
       id: '8'
-      name: Sampling distributions I
+      name: Sampling distributions
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/19yzndBdH8-oz30s44t-onnt_XT3mLVS8UL5418cYefI/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1J2PpyuRZOt9XtzdyZSyzcqNGF9tb9Dk86SSaCZx2l4U/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1BAvBvjjMeKCLkYyS77tS1MpgqCUm57MkNAfbpQVRNzM/edit?usp=sharing
       - id: Demo
@@ -161,15 +161,15 @@
     items:
     - type: Lecture
       id: '9'
-      name: Sampling distributions II
+      name: (Asynchronous recording) Sampling distributions Demo
       auxil:
-      - id: Demo (TBD)
+      # - id: Demo (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-shiny-demos&urlpath=rstudio%2F
-      - id: Demo (TBD)
+      # - id: Demo (TBD)
         # href: https://github.com/berkeley-stat131a/131a-shiny-demos/blob/main/parametric-sampling-distribution-simulation.R
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1ISrQnEeZal1nmfh7KGAS47N_AuGiJ7wKhGCoKSHtE4Y/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1J2PpyuRZOt9XtzdyZSyzcqNGF9tb9Dk86SSaCZx2l4U/edit?usp=sharing
+      # - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1N4GZYX_2g3SEXMiHFKkhC44GYm64x4NiySvLRlIK1ko/edit?usp=sharing
   - date: Thu Sep 17
     items: []
@@ -177,7 +177,7 @@
     items:
     - type: Lecture
       id: '10'
-      name: Sampling distributions III
+      name: Bootstrap
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1lJkcOuAmJ4OCKS2DO-0dQFzdaNod9kTKFv6i3HRkziU/edit?usp=sharing
