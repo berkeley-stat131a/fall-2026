@@ -147,8 +147,10 @@
         href: https://docs.google.com/presentation/d/1J2PpyuRZOt9XtzdyZSyzcqNGF9tb9Dk86SSaCZx2l4U/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1BAvBvjjMeKCLkYyS77tS1MpgqCUm57MkNAfbpQVRNzM/edit?usp=sharing
-      - id: Demo
+      - id: Demo (DataHub)
         href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
+      - id: Demo (GitHub)
+        href: https://github.com/berkeley-stat131a/131a-code-fall-2026/tree/main/demo
     - type: HW
       id: '2'
       name: Released
@@ -179,10 +181,14 @@
       id: '10'
       name: Bootstrap
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1lJkcOuAmJ4OCKS2DO-0dQFzdaNod9kTKFv6i3HRkziU/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1DyAqn8CmhxCeMxELP20iofjhpivoXpqnUqLkYekFeTk/edit?usp=sharing
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/12C_A7PlZzSdQU8Yud7TbTUcxkhHTTiAAtGRO9iYr72o/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1OJYbxpK4zttG8DJr6sS4mGJ0qe8BNpwlbCnWfMPyOG4/edit?usp=sharing
+      - id: Demo (DataHub)
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
+      - id: Demo (GitHub)
+        href: https://github.com/berkeley-stat131a/131a-code-fall-2026/tree/main/demo
     - type: HW
       id: '2'
       name: DUE
@@ -195,7 +201,7 @@
     items:
     - type: Lecture
       id: '11'
-      name: Bootstrap
+      name: Confidence intervals I
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1Ht9BGhNJAhaLADViZvC1hOVdKlugvM0S_z6rwL-upVo/edit?usp=sharing
@@ -217,7 +223,7 @@
     items:
     - type: Lecture
       id: '12'
-      name: Confidence intervals I
+      name: Confidence intervals II
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1QypG8sVSSWzgzAclfOW4OW5lOpszZNB79jXkKaltVDs/edit?usp=sharing
@@ -231,7 +237,7 @@
     items:
     - type: Lecture
       id: '13'
-      name: Confidence intervals II
+      name: Confidence intervals III
       auxil:
       - id: Demo (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-shiny-demos&urlpath=rstudio%2F
