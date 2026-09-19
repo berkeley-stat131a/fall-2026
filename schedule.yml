@@ -181,8 +181,8 @@
       id: '10'
       name: Bootstrap
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/12C_A7PlZzSdQU8Yud7TbTUcxkhHTTiAAtGRO9iYr72o/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1iHtgwoA9SnFXeS-oWHoRWiKvy2C_UrewJw749Cp0OmE/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1OJYbxpK4zttG8DJr6sS4mGJ0qe8BNpwlbCnWfMPyOG4/edit?usp=sharing
       - id: Demo (DataHub)
