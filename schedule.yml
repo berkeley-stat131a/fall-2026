@@ -212,11 +212,11 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1y3LPugdCQm40XFySyZbmUyLgeu0W9NBFDPgodGzKZnM/edit?usp=sharing
     - type: HW
-      id: '4'
-      name: Released (tentative)
+      id: '3'
+      name: Released
       auxil:
-      - id: Homework 4 (TBD)
-        # href: '#'
+      - id: Homework 3
+        href: '/assignment3.html'
   - date: Tue Sep 22
     items: []
   - date: Wed Sep 23
@@ -249,6 +249,12 @@
         # href: https://docs.google.com/presentation/d/1ujy7CuYt4ZDv_o6bGdKLkHnyNcXQz1cdVPpqv8tHbnU/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+    - type: HW
+      id: '3'
+      name: DUE
+      auxil:
+      - id: Homework 3
+        href: '/assignment3.html'
 - week: 6
   days:
   - date: Mon Sep 28
@@ -279,7 +285,7 @@
       id: '4'
       name: DUE
       auxil:
-      - id: Homework 4 (TBD)
+      - id: Homework 3 (TBD)
         # href: '#'
   - date: Thu Oct 1
     items:
@@ -307,7 +313,7 @@
       id: '5'
       name: Released (tentative)
       auxil:
-      - id: Homework 5 (TBD)
+      - id: Homework 4 (TBD)
         # href: '#'
   - date: Tue Oct 6
     items: []
@@ -347,7 +353,7 @@
       id: '5'
       name: DUE
       auxil:
-      - id: Homework 5 (TBD)
+      - id: Homework 4 (TBD)
         # href: '#'
 - week: 8
   days:

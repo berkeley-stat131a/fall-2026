@@ -27,7 +27,7 @@ listing:
 
 If you have DSP Accommodations, [register them ASAP](https://dsp.berkeley.edu/students/policies/accommodations-requesting-letters-accommodation).
 
-HW2 is released. Due Friday 9/18.
+[HW3](/assignment3.qmd) is released. Due Friday 9/25.
 
 Sign up for optional tutoring [here](https://docs.google.com/forms/d/e/1FAIpQLSdeCWJQYmyjLKMKt-LVyesuR2Mt1MdFE_AJW1TJntB_NIsKHw/viewform?usp=publish-editor)!
 

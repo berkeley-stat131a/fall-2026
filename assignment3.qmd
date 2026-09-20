@@ -1,0 +1,56 @@
+---
+title: "📝 HW3"
+editor: 
+  markdown: 
+    wrap: sentence
+format: 
+  html: 
+    embed-resources: true
+---
+
+Due date: **Friday, September 25 at midnight**.
+
+If anything seems confusing or unclear, please create an Ed post. We are here to support you!
+
+## 📮 Submission
+
+Submit your assignment via [Pensive](https://www.pensive.com). The Pensive portal will be live at least a few days before the HW deadline.
+
+-   Make sure to tag your answers properly on Pensive, or else you may be docked points for making the grading process more time-consuming.
+
+<!-- **You must submit a PDF of any PingPong chats that include code you used in your submission.**
+
+- This should take the form of one long PDF. One way to do this is to copy
+all of your relevant PingPong chats into a Google Doc, and then print the doc
+as a PDF.
+
+- You are responsible for understanding all the code you submit, regardless of whether or not you used PingPong for help. -->
+
+## Lectures 8+9 Worksheet (10% of the HW3 grade)
+
+Submit a PDF of the completed demo worksheet from Lectures 8 and 9.
+
+- You can submit handwritten or typed work.
+
+## Lecture 10 Worksheet (10% of the HW3 grade)
+
+Submit a PDF of the completed demo worksheet from Lecture 10.
+
+## Lecture 12 Worksheet (10% of the HW3 grade)
+
+Submit a PDF of the completed demo worksheet from Lecture 12.
+
+## M&Ms and sampling distributions (70% of the HW3 grade)
+
+Complete the HW3 coding problems:
+[DataHub](https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F)
+
+- The HW3 coding problems are located in `131a-code-fall-2026/hw/hw3` on DataHub.
+
+- You are free to download the HW3 repository and work locally in RStudio or Positron, if you wish.
+
+- Be scrappy--if you don't know how to navigate something in RStudio or Positron, ask an LLM or Google your question before posting to Ed! 
+
+- If you do post to Ed, post publicly whenever possible so everyone can benefit from the answer.
+
+**Submit a PDF containing the code and output.** Render your PDF with RStudio or Positron.
