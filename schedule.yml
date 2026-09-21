@@ -203,14 +203,10 @@
       id: '11'
       name: Confidence intervals I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1Ht9BGhNJAhaLADViZvC1hOVdKlugvM0S_z6rwL-upVo/edit?usp=sharing
-      - id: Demo (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-shiny-demos&urlpath=rstudio%2F
-      - id: Demo (TBD)
-        # href: https://github.com/berkeley-stat131a/131a-shiny-demos/blob/main/parametric-bootstrap-simulation.R
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1y3LPugdCQm40XFySyZbmUyLgeu0W9NBFDPgodGzKZnM/edit?usp=sharing
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1FswtIxktxLADAHBiJDRmCQrMotIx69a1t8rdgw5DJBw/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1OSvK76dwH0OoTD3brjWbgL82A_Db-NZ5GWJO9-5DvwY/edit?usp=sharing
     - type: HW
       id: '3'
       name: Released
