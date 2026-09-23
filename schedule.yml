@@ -221,12 +221,10 @@
       id: '12'
       name: Confidence intervals II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1QypG8sVSSWzgzAclfOW4OW5lOpszZNB79jXkKaltVDs/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1-JKmo6Vx0gWcoMQ-Y80pv8at-L5s9flCJOOZOj3KrfA/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Abrdiged slides
+        href: https://docs.google.com/presentation/d/1km2HjoJU9GSbDvZl57r6o6SRtRnnv3zrJIZA31A6w-o/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1ZY-noebOwuBB7G9lGdhWqg-oWsGswZtnxnwRmrgbsGA/edit?usp=sharing
   - date: Thu Sep 24
     items: []
   - date: Fri Sep 25
