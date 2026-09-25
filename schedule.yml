@@ -233,16 +233,14 @@
       id: '13'
       name: Confidence intervals III
       auxil:
-      - id: Demo (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-shiny-demos&urlpath=rstudio%2F
-      - id: Demo (TBD)
-        # href: https://github.com/berkeley-stat131a/131a-shiny-demos/blob/main/confidence-interval-simulation.R
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/17suwYe7bBdYsFe_3-yd0sqM1LNfTh9kKPsYJCuQLRMk/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1ujy7CuYt4ZDv_o6bGdKLkHnyNcXQz1cdVPpqv8tHbnU/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1V-YAoEpz7pCePhlcY8DSw-JW8SAhn3miMtH-AicDFDI/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1kcMp3QsrJ9OjiKFhpuPanVkeo58AcVoRyNYEz8lUEXs/edit?usp=sharing
+      - id: Demo (DataHub)
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
+      - id: Demo (GitHub)
+        href: https://github.com/berkeley-stat131a/131a-code-fall-2026/tree/main/demo
     - type: HW
       id: '3'
       name: DUE
