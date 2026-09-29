@@ -269,16 +269,16 @@
       id: '15'
       name: MT1 Prep Lecture
       auxil:
-      - id: Annotated worksheet/slides (TBD)
-        # href: https://drive.google.com/file/d/1wSJFOfhNbSiFD4wC102F9i9Sccin-IHQ/view?usp=sharing
-      - id: Worksheet/slides (TBD)
-        # href: https://docs.google.com/presentation/d/1DOH-bvyFtWukYzjSgxxvjH0i91d_dB2WTDm78hmwCQ8/edit?usp=sharing
-    - type: HW
-      id: '4'
-      name: DUE
-      auxil:
-      - id: Homework 3 (TBD)
-        # href: '#'
+    #   - id: Annotated worksheet/slides (TBD)
+    #     # href: https://drive.google.com/file/d/1wSJFOfhNbSiFD4wC102F9i9Sccin-IHQ/view?usp=sharing
+      - id: No worksheet or slides today
+    #     # href: https://docs.google.com/presentation/d/1DOH-bvyFtWukYzjSgxxvjH0i91d_dB2WTDm78hmwCQ8/edit?usp=sharing
+    # - type: HW
+    #   id: '4'
+    #   name: DUE
+    #   auxil:
+    #   - id: Homework 3 (TBD)
+    #     # href: '#'
   - date: Thu Oct 1
     items:
     - type: Exam
