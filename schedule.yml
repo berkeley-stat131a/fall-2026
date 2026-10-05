@@ -255,8 +255,8 @@
       id: '14'
       name: Hypothesis Testing I
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1NiJGsRPpWPnCMxa7exyQz4vKMlJuMCXFZNFDdrFNjr8/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1kVlWvs05VWO8afAteE92p85yHMnPlo1WEuktsL6AeHE/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1y0PucefYsiT6HVAHIiWowrRZdQsVN4Lh4DtcTAQ20pg/edit?usp=sharing
       # - id: Lecture code (TBD)
@@ -266,7 +266,7 @@
   - date: Wed Sep 30
     items:
     - type: Lecture
-      id: '15'
+      id: 'MT1P'
       name: MT1 Prep Lecture
       auxil:
     #   - id: Annotated worksheet/slides (TBD)
@@ -294,26 +294,20 @@
   - date: Mon Oct 5
     items:
     - type: Lecture
-      id: '16'
+      id: '15'
       name: Hypothesis Testing II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/11UATbLU_FdD1UpVxD2rNbdUexY9zWJY9P5r13W9W24g/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1QekZ_RxsgMBCvP-PEJ9Imc7zLVySKP-aD8qUUEa2b7k/edit?usp=sharing
-    - type: HW
-      id: '5'
-      name: Released (tentative)
-      auxil:
-      - id: Homework 4 (TBD)
-        # href: '#'
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1DUNXE_gBv66LHEV2nqOWidT1fPAEHFUbzOB3nFEsoQk/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/19usXjZ_fHlC46siavlX85pQXvQICtzyhcktomDwOhw8/edit?usp=sharing
   - date: Tue Oct 6
     items: []
   - date: Wed Oct 7
     items:
     - type: Lecture
-      id: '17'
-      name: Type I+II Errors and Multiple Testing
+      id: '16'
+      name: Hypothesis Testing III
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1SjrkbntYjnrmvG04-1CEmkYYXJ1DTGgAsfJreR93kaY/edit?usp=sharing
@@ -324,6 +318,12 @@
     - type: Exam
       id: ''
       name: Midterm 1 retake in CBTF offered today
+    - type: HW
+      id: '4'
+      name: Released (tentative)
+      auxil:
+      - id: Homework 4 (TBD)
+        # href: '#'
   - date: Thu Oct 8
     items:
     - type: Exam
@@ -332,8 +332,8 @@
   - date: Fri Oct 9
     items:
     - type: Lecture
-      id: '18'
-      name: Power and experiment planning
+      id: '17'
+      name: Hypothesis Testing IV
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1vNam0pZOro6SGmoihj_OhNRtVRsB19ljypD_-hGVkKA/edit?usp=sharing
@@ -341,18 +341,12 @@
         # href: https://docs.google.com/presentation/d/1Ha_ekUgyFsrAcOOGuhYe1OUB6TxE-p2ohXBQLeA6Csg/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
-    - type: HW
-      id: '5'
-      name: DUE
-      auxil:
-      - id: Homework 4 (TBD)
-        # href: '#'
 - week: 8
   days:
   - date: Mon Oct 12
     items:
     - type: Lecture
-      id: '19'
+      id: '18'
       name: Correlation and simple linear regression
       auxil:
       - id: Slides (TBD)
@@ -361,18 +355,12 @@
         # href: https://docs.google.com/presentation/d/15GwYpWcT2nH1lh4V41z7RFb4mH7tMUVuQBgb6ORykfw/edit?usp=sharing
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
-    - type: HW
-      id: '6'
-      name: Released (tentative)
-      auxil:
-      - id: Homework 6 (TBD)
-        # href: '#'
   - date: Tue Oct 13
     items: []
   - date: Wed Oct 14
     items:
     - type: Lecture
-      id: '20'
+      id: '19'
       name: Uncertainty in regression and Multiple regression
       auxil:
       - id: Slides (TBD)
@@ -386,7 +374,7 @@
   - date: Fri Oct 16
     items:
     - type: Lecture
-      id: '21'
+      id: '20'
       name: Closeness of fit
       auxil:
       - id: Slides (TBD)
@@ -396,17 +384,17 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
-      id: '6'
+      id: '4'
       name: DUE
       auxil:
-      - id: Homework 6 (TBD)
+      - id: Homework 4 (TBD)
         # href: '#'
 - week: 9
   days:
   - date: Mon Oct 19
     items:
     - type: Lecture
-      id: '22'
+      id: '21'
       name: Polynomial terms
       auxil:
       - id: Slides (TBD)
@@ -416,17 +404,17 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
-      id: '7'
+      id: '5'
       name: Released (tentative)
       auxil:
-      - id: Homework 7 (TBD)
+      - id: Homework 5 (TBD)
         # href: '#'
   - date: Tue Oct 20
     items: []
   - date: Wed Oct 21
     items:
     - type: Lecture
-      id: '23'
+      id: '22'
       name: Categorical Covariates
       auxil:
       - id: Slides (TBD)
@@ -440,13 +428,13 @@
   - date: Fri Oct 23
     items:
     - type: Lecture
-      id: '24'
+      id: 'MT2P'
       name: MT2 Review Lecture
     - type: HW
-      id: '7'
+      id: '5'
       name: DUE
       auxil:
-      - id: Homework 7 (TBD)
+      - id: Homework 5 (TBD)
         # href: '#'
 - week: 10
   days:
@@ -463,7 +451,7 @@
   - date: Wed Oct 28
     items:
     - type: Lecture
-      id: '25'
+      id: '23'
       name: Interactions
       auxil:
       - id: Slides (TBD)
@@ -483,7 +471,7 @@
   - date: Fri Oct 30
     items:
     - type: Lecture
-      id: '26'
+      id: '24'
       name: Cross-validation
       auxil:
       - id: Slides (TBD)
@@ -495,7 +483,7 @@
   - date: Mon Nov 2
     items:
     - type: Lecture
-      id: '27'
+      id: '25'
       name: Linear probability models
     - type: Exam
       id: ''
@@ -508,7 +496,7 @@
   - date: Wed Nov 4
     items:
     - type: Lecture
-      id: '28'
+      id: '26'
       name: Logistic Regression I
       auxil:
       - id: Slides (TBD)
@@ -522,7 +510,7 @@
   - date: Fri Nov 6
     items:
     - type: Lecture
-      id: '29'
+      id: '27'
       name: Logistic Regression II
       auxil:
       - id: Slides (TBD)
@@ -542,7 +530,7 @@
   - date: Mon Nov 9
     items:
     - type: Lecture
-      id: '30'
+      id: '28'
       name: Classification error metrics I
       auxil:
       - id: Slides (TBD)
@@ -566,7 +554,7 @@
   - date: Fri Nov 13
     items:
     - type: Lecture
-      id: '31'
+      id: '29'
       name: Classification error metrics II
       auxil:
       - id: Slides (TBD)
@@ -578,7 +566,7 @@
   - date: Mon Nov 16
     items:
     - type: Lecture
-      id: '32'
+      id: '30'
       name: Causal Inference I
     - type: HW
       id: '10'
@@ -597,7 +585,7 @@
   - date: Wed Nov 18
     items:
     - type: Lecture
-      id: '33'
+      id: '31'
       name: Causal Inference II
   - date: Thu Nov 19
     items: []
@@ -610,7 +598,7 @@
         # href: https://docs.google.com/presentation/d/1wFZM1TEQJ1uY1Q2LVMqb49LNUmO9S-wwp9JfoAROb6U/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
-      id: '34'
+      id: '32'
 - week: 14
   days:
   - date: Mon Nov 23
@@ -622,7 +610,7 @@
         # href: https://docs.google.com/presentation/d/1nXyjqORTciHMndmcHKsYEywjdFs8YfcfxAJiQYXtXoA/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1yqRxpnwfHsfbKn8Xrgx-nuUXba_beY1Hm4TnOZY4V3I/edit?usp=sharing
-      id: '35'
+      id: '33'
   - date: Tue Nov 24
     items:
     - type: HW
@@ -648,7 +636,7 @@
   - date: Mon Nov 30
     items:
     - type: Lecture
-      id: '36'
+      id: 'MT3P'
       name: MT3 Prep Lecture
       auxil:
       - id: Practice problems on bcourses (TBD)
