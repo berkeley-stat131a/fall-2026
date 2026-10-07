@@ -309,12 +309,14 @@
       id: '16'
       name: Hypothesis Testing III
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1SjrkbntYjnrmvG04-1CEmkYYXJ1DTGgAsfJreR93kaY/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1-47k14Eqaogi2SjA5m3mrsvClgkn2gFbIp2muk18ypw/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1zo3vlbpWzN1-peUxJcBMoaDdt5SZzxfuN70K3dF3pqE/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1iCt2GHJXkoBmfZTUN9uWQ4ZBF-7NOI6HuDjNHs4H_r4/edit?usp=sharing
+      - id: Demo (DataHub)
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
+      - id: Demo (GitHub)
+        href: https://github.com/berkeley-stat131a/131a-code-fall-2026/tree/main/demo
     - type: Exam
       id: ''
       name: Midterm 1 retake in CBTF offered today
