@@ -337,12 +337,14 @@
       id: '17'
       name: Hypothesis Testing IV
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1vNam0pZOro6SGmoihj_OhNRtVRsB19ljypD_-hGVkKA/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1Ha_ekUgyFsrAcOOGuhYe1OUB6TxE-p2ohXBQLeA6Csg/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1KRrb_rv0ja5xmK_yQHWwFYVIRAPPUjChpY7zgp71PKw/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1K0J0vrNcrYeRgZuIJis0rN6ndswks4MSsaI6yOAay_w/edit?usp=sharing
+      - id: Demo (DataHub)
+        href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F
+      - id: Demo (GitHub)
+        href: https://github.com/berkeley-stat131a/131a-code-fall-2026/tree/main/demo
 - week: 8
   days:
   - date: Mon Oct 12
