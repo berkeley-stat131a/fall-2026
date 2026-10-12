@@ -320,12 +320,6 @@
     - type: Exam
       id: ''
       name: Midterm 1 retake in CBTF offered today
-    - type: HW
-      id: '4'
-      name: Released (tentative)
-      auxil:
-      - id: Homework 4 (TBD)
-        # href: '#'
   - date: Thu Oct 8
     items:
     - type: Exam
@@ -337,8 +331,8 @@
       id: '17'
       name: Hypothesis Testing IV
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1KRrb_rv0ja5xmK_yQHWwFYVIRAPPUjChpY7zgp71PKw/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1_l4J_dgbgLSQBsAr03etzIqtkHcpEzr-dm2fhdCqncA/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1K0J0vrNcrYeRgZuIJis0rN6ndswks4MSsaI6yOAay_w/edit?usp=sharing
       - id: Demo (DataHub)
@@ -353,12 +347,18 @@
       id: '18'
       name: Correlation and simple linear regression
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/10LG9V-DWzuNeFnIRJUH-fSfTZZiOp9ZP3eSrIm1SjRI/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/15GwYpWcT2nH1lh4V41z7RFb4mH7tMUVuQBgb6ORykfw/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1GvFjZUJrivUmrSffw-hWbH8KBz2lXhNUwfpexjEVuLc/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1IA3NpbFghoyV123VVvnU8gK71reGirTZxO_H_0nrgrE/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+    - type: HW
+      id: '4'
+      name: Released
+      auxil:
+      - id: Homework 4 
+        href: '/assignment4.html'  
   - date: Tue Oct 13
     items: []
   - date: Wed Oct 14
@@ -391,8 +391,8 @@
       id: '4'
       name: DUE
       auxil:
-      - id: Homework 4 (TBD)
-        # href: '#'
+      - id: Homework 4
+        href: '/assignment4.html'
 - week: 9
   days:
   - date: Mon Oct 19
