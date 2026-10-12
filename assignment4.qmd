@@ -1,0 +1,93 @@
+---
+title: "📝 HW4"
+editor:
+  markdown:
+    wrap: sentence
+format:
+  html:
+    embed-resources: true
+---
+
+Due date: **Friday, October 16 at midnight**.
+
+Some components of this assignment have not been seen by a previous cohort of STAT 131A students, so there may be some unforeseen hiccups.
+
+-   If anything seems confusing or unclear, please create an Ed post. We are here to support you!
+
+## 📮 Submission
+
+Submit your assignment via [Pensive](https://www.pensive.com). The Pensive portal will be live at least a few days before the HW deadline.
+
+- Write your answers on paper or a tablet. Submit a PDF of your answers.
+
+-  **Make sure to tag your answers properly on Pensive, or else you will need to use slip days for every day day required to fix your work.**
+
+## 1. Lecture 16 Worksheet (20%)
+
+Submit a PDF of the completed demo worksheet from Lecture 16.
+
+- You can submit handwritten or typed work.
+
+## 2. Lecture 17 Worksheet (20%)
+
+Submit a PDF of the completed demo worksheet from Lecture 17.
+
+## 3. Drawing a hypothesis test (30%)
+
+Suppose we conduct an experiment to measure the effect of a new mood-boosting drug.
+Patients are randomly assigned to take either the new drug or a fake drug for three months.
+
+-   Let $\hat{p}_1$ be the proportion of patients in the new drug group who report an improved mood.
+
+-   Let $\hat{p}_0$ be the proportion of patients in the fake drug group who report an improved mood.
+
+-   As it turns out, $\hat{p}_1 - \hat{p}_0 = 0.2$.
+
+We conduct a two-sided hypothesis test of $H_0: p_1 - p_0 = 0$, where $p_1 - p_0$ is the true difference in the proportion of patients who would report an improved mood if they took the new drug, relative to if they took the fake drug.
+We use a significance level of $\alpha = 0.1$, and calculate a two-sided p-value of $0.15$.
+
+a. Draw a diagram illustrating this hypothesis test. Label each of these seven components:
+
+    1. The null sampling distribution of the estimator.
+    2. The value of the estimand under the null hypothesis.
+    3. The estimated standard error of the estimator under the null hypothesis. You do not have to compute it, just label it.
+    4. The area corresponding to $\alpha$.
+    5. The bounds of the $H_0$ rejection region. You do not have to compute the bounds, just label them.
+    6. The observed value of the point estimate.
+    7. The area corresponding to the two-sided p-value of the test.
+
+    Your picture does not have to be drawn to scale, and you are free to use shortened labels like [1], [2], [3], etc. Make your labels and annotations BIG AND CLEAR!
+
+b. Now suppose that the true difference is $p_1 - p_0 = 0.1$. In other words, if we were to give this drug to the entire patient population, the average effect would be $0.1$.
+
+    -   Draw the sampling distribution of $\hat{p}_1 - \hat{p}_0$ in a world where this is true. You can assume its standard error is the same as the standard error in your drawing from part (a).
+
+    -   On the same axis, also draw the null sampling distribution from part (a).
+
+    -   Shade the area of the true sampling distribution corresponding to the parallel universes where we obtain a point estimate that leads us to reject the null hypothesis.
+
+    How should we interpret this area? What is this area called? *Hint: See the Lecture 17 worksheet.*
+
+## 4. Many experiments (15%)
+
+A large number of randomized experiments were conducted to determine whether taking a particular drug regularly would decrease the chance of getting a certain disease.
+For each of the experiments, the drug effect is the difference between the proportion of people taking the drug who got the disease and the proportion of people taking a placebo who got the disease.
+In each experiment, $\alpha = 0.05$.
+
+Suppose the drug had no true effect. Answer each of the questions below. Then, write an explanation of at least one sentence, or make one drawing, to justify your answer.
+
+a. Fill in the blank: We expect p-values to be less than 0.05 for \_\_\_\_% of experiments.
+
+b. True or false: There will be a similar number of experiments showing positive and negative values of the drug effect.
+
+c. Fill in the blank: When 95% confidence intervals for the true effect are constructed, those confidence intervals will include 0 about \_\_\_\_% of the time.
+
+## 5. From confidence intervals to hypothesis tests (15%)
+
+Suppose the 95% normally-approximated confidence interval for the proportion of voters who will vote for candidate A in the upcoming election is $[0.51, 0.59]$.
+
+a. What is the two-sided p-value for the corresponding hypothesis test of $p_{H_0} = 0.5$?
+
+b. If we assume the researchers used $p_{H_0}$ in their calculation of the margin of error, what was the sample size needed to construct this confidence interval?
+
+Make sure your answer includes `pnorm(...)` and/or `qnorm(...)` as needed. If you choose to use `pnorm(...)` or `qnorm(...)`, run your computation in R and report the numeric output with appropriate precision.
