@@ -347,8 +347,8 @@
       id: '18'
       name: Correlation and simple linear regression
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1GvFjZUJrivUmrSffw-hWbH8KBz2lXhNUwfpexjEVuLc/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1uKKKO7z4QboSSrQjdSZcQl8lsBxTtvOAvD-ZEG0EQZU/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1IA3NpbFghoyV123VVvnU8gK71reGirTZxO_H_0nrgrE/edit?usp=sharing
       # - id: Lecture code (TBD)
