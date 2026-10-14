@@ -48,7 +48,7 @@ We use a significance level of $\alpha = 0.1$, and calculate a two-sided p-value
 
 a. Draw a diagram illustrating this hypothesis test. Label each of these seven components:
 
-    1. The null sampling distribution of the estimator.
+    1. The null sampling distribution of the estimator. You can assume the CLT is satisfied by the choice of estimator and sample size.
     2. The value of the estimand under the null hypothesis.
     3. The estimated standard error of the estimator under the null hypothesis. You do not have to compute it, just label it.
     4. The area corresponding to $\alpha$.
@@ -58,7 +58,7 @@ a. Draw a diagram illustrating this hypothesis test. Label each of these seven c
 
     Your picture does not have to be drawn to scale, and you are free to use shortened labels like [1], [2], [3], etc. Make your labels and annotations BIG AND CLEAR!
 
-b. Now suppose that the true difference is $p_1 - p_0 = 0.1$. In other words, if we were to give this drug to the entire patient population, the average effect would be $0.1$.
+b. Now suppose that the true difference is $p_1 - p_0 = 0.1$. In other words, if we were to give the real drug to the entire patient population in one universe and give them the fake drug in the other universe, the true difference in the proportion of patients who report an improved mood with the real drug versus the fake drug would be $0.1$.
 
     -   Draw the sampling distribution of $\hat{p}_1 - \hat{p}_0$ in a world where this is true. You can assume its standard error is the same as the standard error in your drawing from part (a).
 
