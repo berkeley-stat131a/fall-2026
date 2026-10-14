@@ -60,9 +60,9 @@ a. Draw a diagram illustrating this hypothesis test. Label each of these seven c
 
 b. Now suppose that the true difference is $p_1 - p_0 = 0.1$. In other words, if we were to give the real drug to the entire patient population in one universe and give them the fake drug in the other universe, the true difference in the proportion of patients who report an improved mood with the real drug versus the fake drug would be $0.1$.
 
-    -   Draw the sampling distribution of $\hat{p}_1 - \hat{p}_0$ in a world where this is true. You can assume its standard error is the same as the standard error in your drawing from part (a).
+    -   Draw the sampling distribution of $\hat{p}_1 - \hat{p}_0$ in a world where $p_1 - p_0 = 0.1$. You can assume its standard error of $\hat{p}_1 - \hat{p}_0$ is the same as the standard error in your drawing from part (a).
 
-    -   On the same axis, also draw the null sampling distribution from part (a).
+    -   On the same axis, also draw the null sampling distribution of $\hat{p}_1 - \hat{p}_0$ from part (a).
 
     -   Shade the area of the true sampling distribution corresponding to the parallel universes where we obtain a point estimate that leads us to reject the null hypothesis.
 
