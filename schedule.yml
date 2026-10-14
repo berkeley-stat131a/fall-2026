@@ -345,7 +345,7 @@
     items:
     - type: Lecture
       id: '18'
-      name: Correlation and simple linear regression
+      name: Simple linear regression
       auxil:
       - id: Slides
         href: https://docs.google.com/presentation/d/1uKKKO7z4QboSSrQjdSZcQl8lsBxTtvOAvD-ZEG0EQZU/edit?usp=sharing
@@ -365,14 +365,12 @@
     items:
     - type: Lecture
       id: '19'
-      name: Uncertainty in regression and Multiple regression
+      name: Uncertainty in regression
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1vdKQwLeeuYZHO0L-NjC7yquO2lPctalw-Mv_dFI8YG4/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/18A6Medao9c8htha2DTZS_PqIR7hpP5ZJV77dLn85E5w/edit?usp=sharing
-      - id: Lecture code (TBD)
-        # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1HHn5L1MV6Qz1rlLIyKMxZH3v-cNfeLF9cwS6f7s2l4w/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1nVdEVRabMiyZwTE3wI_0ODWue_awjck8NkTeom-gOqw/edit?usp=sharing
   - date: Thu Oct 15
     items: []
   - date: Fri Oct 16
