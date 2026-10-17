@@ -377,13 +377,13 @@
     items:
     - type: Lecture
       id: '20'
-      name: Closeness of fit
+      name: (ASYNC) Closeness of fit I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1VTySBzfYtQEgWJjQwEjQSa4xUBD9JczauOBAXLI5PVA/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/10uzKxUjdb5iSi6x-Dfa1Nv5y4VdITpiahVuHaWcFXv4/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/12_AjN86KCJKF4_xe7S_z1-WFEn0Fp2BTebJIiPJnbcY/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1XAYMajhoCTzWbaLt8-DD1NZXh3aUJqOE83YCdRZZcX4/edit?usp=sharing
+      - id: Recording on Ed
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '4'
@@ -397,13 +397,13 @@
     items:
     - type: Lecture
       id: '21'
-      name: Polynomial terms
+      name: (ASYNC) Closeness of fit II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/16KOIRmHGvg8kRY8Bj-HNOOLyIUQR541mYbDvuoPuRak/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/18XwXnGuvYvvbDIWbLGqIFYzAjLibBZEK2e3M3qqu7co/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/16KOIRmHGvg8kRY8Bj-HNOOLyIUQR541mYbDvuoPuRak/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1XAYMajhoCTzWbaLt8-DD1NZXh3aUJqOE83YCdRZZcX4/edit?usp=sharing
+      - id: Recording on Ed
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '5'
@@ -417,7 +417,7 @@
     items:
     - type: Lecture
       id: '22'
-      name: Categorical Covariates
+      name: Polynomial terms and Categorical Covariates
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/14kR6fGcYWn99y_p4jCwfM7bZ4O_s2p0yBSw3K4u9ZJQ/edit?usp=sharing
