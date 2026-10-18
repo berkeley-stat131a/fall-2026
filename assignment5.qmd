@@ -1,0 +1,191 @@
+---
+title: "📝 HW5"
+editor:
+  markdown:
+    wrap: sentence
+format:
+  html:
+    embed-resources: true
+---
+
+Due date: **Friday, October 23 at midnight**.
+
+Some components of this assignment have not been seen by a previous cohort of STAT 131A students, so there may be some unforeseen hiccups.
+
+-   If anything seems confusing or unclear, please create an Ed post. We are here to support you!
+
+## 📮 Submission
+
+Submit your assignment via [Pensive](https://www.pensive.com). The Pensive portal will be live at least a few days before the HW deadline.
+
+- Write your answers on paper or a tablet. Submit a PDF of your answers.
+
+-  **Make sure to tag your answers properly on Pensive, or else you will need to use slip days for every day required to fix your work.**
+
+## Question 1
+
+Researchers believed that an increase in lean body mass is associated with an increase in maximal oxygen uptake.
+A scatterplot of the measurements taken from 18 randomly selected college athletes displayed a linear relationship between the two variables, with $r=0.2$.
+A significance test for the null hypothesis that the slope of the regression line is 0 versus the alternative that the slope is greater than 0 yielded a p-value of 0.07.
+Complete the following statements. If there is insufficient information provided to fill in the blank, write NA.
+
+a. _______% of the variation in maximal oxygen uptake for college athletes can be explained by the amount of lean body mass.
+
+b. The correlation of maximal oxygen uptake for college athletes and the amount of lean body mass in the population is _____________.
+
+c. The correlation of maximal oxygen uptake for college athletes and the amount of lean body mass in the sample is _____________.
+
+d. **(True/False)** At a significance level of 0.05, we do not observe statistically significant evidence of a linear relationship between lean body mass and maximal oxygen uptake for college athletes.
+
+e. **(True/False)** At a significance level of 0.1, we observe statistically significant evidence of a linear relationship between lean body mass and maximal oxygen uptake for college athletes.
+
+## Question 2
+
+**(True/False)** Bob generates a dataset composed of covariates $X_i$ where $i = 1,...,m$, and one target variable $Y$.
+Bob generated the data using the following formula: $Y = \beta_0^* + \beta_1^*X_1 + ... + \beta_m^*X_m + \epsilon$, where $\beta^*$ is a vector of predefined coefficients, and $\epsilon \sim N(0,\sigma^2)$.
+Bob gives you $\beta^*$ and the entire dataset, but he leaves out the target variable $Y$.
+Using the data and $\beta^*$, you can perfectly reconstruct $Y$.
+
+## Question 3
+
+**(True/False)** This is a valid linear regression model: $y_i = \beta_0 + \beta_1 x_i + \beta_2 \log (x_i) + \beta_3 x_i^2 + \epsilon_i$, where $\epsilon_i \sim N(0,\sigma^2)$.
+
+## Question 4
+
+The following plot shows the standard deviation line and regression line for two variables $X$ and $Y$.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=3, fig.height=3, fig.align="center"}
+library(tidyverse)
+theme_set(theme_bw())
+set.seed(131)
+
+d <- tibble(X = rnorm(80)) %>%
+  mutate(Y = X + rnorm(n(), sd = 2))
+
+slope <- with(d, sd(Y)/sd(X))
+intercept <- with(d, mean(Y) - mean(X) * slope)
+
+m <- lm(Y ~ X, d)
+
+lines_df <- tibble(X = range(d$X)) %>%
+  mutate(A = intercept + X*slope,
+         B = predict(m, .)) %>%
+  gather(method, Y, A:B)
+
+ggplot(lines_df, aes(x = X, y = Y)) +
+  geom_point(data = d, shape = 1, size = 2, alpha = .5) +
+  geom_line(aes(group = method)) +
+  geom_label(data = function(d) d %>% top_n(1, X),
+             aes(label = method),
+             hjust = 0, nudge_x = .2) +
+  scale_x_continuous(expand = c(.02, 0)) +
+  scale_y_continuous(expand = c(.02, 0)) +
+  coord_cartesian(xlim = range(d$X), clip = "off") +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid = element_blank(),
+        plot.margin = margin(7, 7, 0, 0, "mm"),
+        legend.position = "none")
+```
+
+Let $r$ denote the correlation between $X$ and $Y$, and $s_A$ and $s_B$ denote the slope of lines A and B, respectively.
+Evaluate the following statements:
+
+a. **(True/False)** The point where the two lines meet marks the mean of $X$ and the mean of $Y$.
+
+b. **(True/False)** Line A is the regression line.
+
+c. **(True/False)** $s_B = r \times s_A$.
+
+d. **(True/False)** $r < 1$.
+
+## Question 5
+
+A linear regression model is fit to predict the sales price of California houses using the following features: the square footage of the house, the number of rooms in the house, and the median income of the area in which the house is located. The model is fit to a uniform random sample of 10,000 homes in California.
+
+a. Suppose that the estimated coefficient for the number of rooms in the fitted model is 50,000. Interpret the value of this coefficient in the context of the problem.
+
+b. Suppose the estimated standard error for the coefficient in part (a) is 1,000. What are the units of the estimated standard error? What is the interpretation of the true (unobserved) standard error? Do the parameters of this problem suggest that the estimated standard error is likely a "good" estimate?
+
+c. Suppose that the fitted intercept is -10,000. Is it reasonable for the intercept to be negative in this model? Explain.
+
+## Question 6
+
+Siti is interested in how much sleep UC Berkeley students get on a typical weeknight.
+Siti randomly samples 1,000 UC Berkeley students and asks them a series of questions.
+After completing the data collection process, Siti constructs a dataframe with the following columns:
+
+-   `id`: a character (i.e., string) column of anonymized but unique student IDs
+-   `sleep`: a numeric column indicating the number of hours of sleep the given student gets on a typical weeknight
+-   `class`: a character column indicating whether the student in the given row is a freshman, sophomore, junior, or senior. **freshman** is the reference level.
+-   `gpa`: a numeric column indicating the GPA of the given student on a 0-4 scale
+
+The dataframe is named `df`.
+Note that there are no missing values in `df`.
+
+a. Siti runs a simple linear regression with sleep as the outcome variable and GPA as the input variable.
+    She also includes an intercept term.
+    Siti finds that the coefficient associated with GPA is 0.5.
+    How should Siti interpret this coefficient? Answer in no more than one sentence.
+
+b. Siti then runs the following regression in R: `lm(sleep ~ 1 + gpa + I(gpa^2), data=df)`.
+    How will the $R^2$ of this model compare to the $R^2$ of the model in part (a)? If there is not enough information provided to answer the question, write NA.
+
+    The $R^2$ of the model in part (a) will be ___________________ the $R^2$ of the new model.
+
+c. Siti runs the following regression in R: `lm(sleep ~ 1 + class + gpa, data=df)`.
+    How many coefficients will be listed in the `lm` model output (including the intercept)?
+
+d. Suppose the intercept coefficient of the model in part (c) is 3. Interpret this coefficient in the context of the problem.
+
+e. Suppose the `classjunior` coefficient of the model in part (c) is -0.3. Interpret this coefficient in the context of the problem.
+
+## Question 7
+
+Suppose I have a two-column dataset of the heights of fathers and their sons, with height measured in inches.
+I fit a linear regression predicting a son's height from his father's height.
+The fitted model has the following form:
+
+$$
+\widehat{\text{father's height}} = \hat{\beta}_0 + \hat{\beta}_1 (\text{son's height}).
+$$
+
+Suppose I convert the units of the son's height column from inches to feet.
+I fit a new linear regression model on the updated data using the same regression formula as the original model.
+
+Evaluate the following statements about the new model:
+
+a. **(True/False)** The $R^2$ value of the new model will likely be different than the $R^2$ value of the original model.
+
+b. **(True/False)** The $\hat{\beta}_1$ coefficient of the new model will likely be different than the $\hat{\beta}_1$ coefficient of the original model.
+
+## Question 8
+
+Suppose you are given observations $Y_1, \ldots, Y_n$ and covariates $X_{1}, \ldots, X_{n}$.
+Suppose you run linear regression with only an intercept term, and no slope terms.
+What would be the resulting value of $R^2$? If there is not enough information provided to answer the question, write NA.
+
+## Question 9
+
+A car manufacturer is trying to understand the correlation between the fuel efficiency and price of one of their vehicles.
+Using a dataset consisting of prior year sales volume (`sales`) and fuel efficiency (`mpg`) for a range of different vehicles, they run the following regression in R and find the subsequent output:
+
+```
+lm(formula = price ~ 1 + mpg + I(mpg^2), data = df)
+...
+Coefficients:
+             Estimate ...
+(Intercept)   26690.0 ...
+mpg             271.0 ...
+I(mpg^2)          5.0 ...
+...
+```
+
+Suppose the current fuel efficiency of a vehicle under consideration is $20$ mpg.
+Complete the following statements:
+
+a. For this specific vehicle, what is its model-estimated price?
+
+b. For this specific vehicle, a one unit increase in mpg is associated with a ___________ increase in predicted price.
+
+c. For a different vehicle with 25 mpg, a one unit increase in mpg is associated with a ___________ increase in predicted price.
