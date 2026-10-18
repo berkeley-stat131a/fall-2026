@@ -407,10 +407,10 @@
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '5'
-      name: Released (tentative)
+      name: Released
       auxil:
-      - id: Homework 5 (TBD)
-        # href: '#'
+      - id: Homework 5
+        href: '/assignment5.html'
   - date: Tue Oct 20
     items: []
   - date: Wed Oct 21
@@ -436,8 +436,8 @@
       id: '5'
       name: DUE
       auxil:
-      - id: Homework 5 (TBD)
-        # href: '#'
+      - id: Homework 5
+        href: '/assignment5.html'
 - week: 10
   days:
   - date: Mon Oct 26
