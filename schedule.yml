@@ -419,11 +419,11 @@
       id: '22'
       name: Polynomial terms and Categorical Covariates
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/14kR6fGcYWn99y_p4jCwfM7bZ4O_s2p0yBSw3K4u9ZJQ/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1IZUZiAMIWBvdWaCWpgtED8m7jEwKzh1ZFtzYnMCXkII/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1ySrgB3oeRXgOuucTrYa-L-tK58ZoUCRMSLCRbxbvVhA/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1zflW1kLFbEEIc7FsiKvh9tcDyENJnz8EzEeV2VJF8bw/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
   - date: Thu Oct 22
     items: []
