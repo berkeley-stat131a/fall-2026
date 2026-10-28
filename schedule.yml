@@ -456,17 +456,17 @@
       id: '23'
       name: Interactions
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/18y7xPdFIjuRqTyhEbmgg3dL71CO2eMegr5FP87iHULA/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1E6l8xmgmS_PYc3h52p079igV11GaCdyxyvNe1hMtWe8/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/12bj9oekT2gk3GNszz3lXEBKuTW0Mbi0g-e77spNuukY/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1C-UFpFH_DVsFKUO__iJesgiD3WaN0MjhHBXemISxAM4/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
-    - type: HW
-      id: '8'
-      name: Released (tentative)
-      auxil:
-      - id: Homework 8 (TBD)
+    # - type: HW
+    #   id: '8'
+    #   name: Released (tentative)
+    #   auxil:
+    #   - id: Homework 8 (TBD)
         # href: '#'
   - date: Thu Oct 29
     items: []
