@@ -357,8 +357,8 @@
       id: '4'
       name: Released
       auxil:
-      - id: Homework 4 
-        href: '/assignment4.html'  
+      - id: Homework 4
+        href: '/assignment4.html'
   - date: Tue Oct 13
     items: []
   - date: Wed Oct 14
@@ -462,12 +462,7 @@
         href: https://docs.google.com/presentation/d/1C-UFpFH_DVsFKUO__iJesgiD3WaN0MjhHBXemISxAM4/edit?usp=sharing
       # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
-    # - type: HW
-    #   id: '8'
-    #   name: Released (tentative)
-    #   auxil:
-    #   - id: Homework 8 (TBD)
-        # href: '#'
+
   - date: Thu Oct 29
     items: []
   - date: Fri Oct 30
@@ -476,10 +471,10 @@
       id: '24'
       name: Cross-validation
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1O7nz_jwzLe7OZpYn8FdKMUET8n9tSi_eLNj-xjU28xw/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1IMYqzxGygSkhOEoaTzl6xVbHyr3qcN76uWBb14cu3ks/edit?usp=sharing
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1UUIhC9eWrlko3VWF0fyYG9k5WrNAWwpkscctXusQUmA/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1TxBBb5DJ5xCwFT_hEDXCfJO9iJI0bF6cTdj9YI96G_8/edit?usp=sharing
 - week: 11
   days:
   - date: Mon Nov 2
@@ -490,6 +485,12 @@
     - type: Exam
       id: ''
       name: Midterm 2 retake in CBTF offered today
+    - type: HW
+      id: '6'
+      name: Released (tentative)
+      auxil:
+      - id: Homework 6 (TBD)
+        href: '#'
   - date: Tue Nov 3
     items:
     - type: Exam
@@ -522,10 +523,10 @@
       - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
-      id: '8'
+      id: '6'
       name: DUE
       auxil:
-      - id: Homework 8 (TBD)
+      - id: Homework 6 (TBD)
         # href: '#'
 - week: 12
   days:
@@ -540,10 +541,10 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1aTrY-Nj3UInr7C7tre-OW0_05dYvDQvpELGQhP4TNkg/edit?usp=sharing
     - type: HW
-      id: '9'
+      id: '7'
       name: Released (tentative)
       auxil:
-      - id: Homework 9 (TBD)
+      - id: Homework 7 (TBD)
         # href: '#'
   - date: Tue Nov 10
     items: []
@@ -563,6 +564,12 @@
         # href: https://docs.google.com/presentation/d/1ybRLXIQZDDpoi-XBfXANdc9Ywm6Vosp9YUnMmaqQd08/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1XGra5cZw6fjsrlZ_E_qC11khZ1uPHvTzFHd4QxQanZg/edit?usp=sharing
+    - type: HW
+      id: '7'
+      name: DUE
+      auxil:
+      - id: Homework 7 (TBD)
+        # href: '#'
 - week: 13
   days:
   - date: Mon Nov 16
@@ -571,16 +578,10 @@
       id: '30'
       name: Causal Inference I
     - type: HW
-      id: '10'
+      id: '8'
       name: Released (tentative)
       auxil:
-      - id: Homework 10 (TBD)
-        # href: '#'
-    - type: HW
-      id: '9'
-      name: DUE
-      auxil:
-      - id: Homework 9 (TBD)
+      - id: Homework 7 (TBD)
         # href: '#'
   - date: Tue Nov 17
     items: []
@@ -613,14 +614,14 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1yqRxpnwfHsfbKn8Xrgx-nuUXba_beY1Hm4TnOZY4V3I/edit?usp=sharing
       id: '33'
-  - date: Tue Nov 24
-    items:
     - type: HW
-      id: '10'
+      id: '8'
       name: DUE
       auxil:
-      - id: Homework 10 (TBD)
+      - id: Homework 7 (TBD)
         # href: '#'
+  - date: Tue Nov 24
+    items: []
   - date: Wed Nov 25
     items:
     - type: Holiday
