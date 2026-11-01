@@ -471,8 +471,8 @@
       id: '24'
       name: Cross-validation
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1UUIhC9eWrlko3VWF0fyYG9k5WrNAWwpkscctXusQUmA/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/18pmaydQZmw0VZwcnmB28RN1ixvnq3HVvR-eqj6kS6V4/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1TxBBb5DJ5xCwFT_hEDXCfJO9iJI0bF6cTdj9YI96G_8/edit?usp=sharing
 - week: 11
@@ -482,6 +482,11 @@
     - type: Lecture
       id: '25'
       name: Linear probability models
+      auxil:
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1kPqnIeXxCKEJGqC3LUwnmAkgU6vI6uh7-B8fvBN8LSg/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/13n3MvY88oewJHrSFOGF9yfecCslkiu726rilS9q08Wo/edit?usp=sharing
     - type: Exam
       id: ''
       name: Midterm 2 retake in CBTF offered today
