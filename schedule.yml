@@ -494,8 +494,8 @@
       id: '6'
       name: Released (tentative)
       auxil:
-      - id: Homework 6 (TBD)
-        href: '#'
+      - id: Homework 6
+        href: '/assignment6.html'
   - date: Tue Nov 3
     items:
     - type: Exam
@@ -531,8 +531,8 @@
       id: '6'
       name: DUE
       auxil:
-      - id: Homework 6 (TBD)
-        # href: '#'
+      - id: Homework 6
+        href: '/assignment6.html'
 - week: 12
   days:
   - date: Mon Nov 9
