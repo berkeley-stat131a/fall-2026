@@ -483,8 +483,8 @@
       id: '25'
       name: Linear probability models
       auxil:
-      - id: Abridged Slides
-        href: https://docs.google.com/presentation/d/1kPqnIeXxCKEJGqC3LUwnmAkgU6vI6uh7-B8fvBN8LSg/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1xFK7l08o0evj3DSWeax45u2DRbsALEe-uEfC3E3EqC4/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/13n3MvY88oewJHrSFOGF9yfecCslkiu726rilS9q08Wo/edit?usp=sharing
     - type: Exam
@@ -507,11 +507,11 @@
       id: '26'
       name: Logistic Regression I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1aqlgCsA2pjelzkM5kDYMAaynkFyf8mH5_XupK58ox4o/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1iJjcs4wtiUPkm-awr5Wip_5yEuhythKB_Hb8RD643cI/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1lqsC8zXymH0jT2PV8ZcLVk2awsrwG1kDSfA1gJKUXas/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1vT14Q22fnujKuMS3jY-lSTVzVbsTpYzWlyP3qZUK3Vc/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
   - date: Thu Nov 5
     items: []
