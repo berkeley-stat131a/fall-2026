@@ -521,11 +521,11 @@
       id: '27'
       name: Logistic Regression II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1Z-Fy51ywyOaOIEFZ30TQyDZ_Sg0n6YlriuRfZIqzJkY/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1gBhjizJpYcN9PIDbt2N9jtWyaYMFxc2NF8AC9MgGh4c/edit?usp=sharing
-      - id: Lecture code (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1dm_4jfWMzytwVyjTIPTt9tp9A_-opUKjYqm2zBC1bOM/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1Ovct_m0pcewws_ia883pCeFqpnqu2E7SFL7XI_7pdPk/edit?usp=sharing
+      # - id: Lecture code (TBD)
         # href: https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-lecture-code&urlpath=rstudio%2F
     - type: HW
       id: '6'
