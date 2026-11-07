@@ -521,8 +521,8 @@
       id: '27'
       name: Logistic Regression II
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1dm_4jfWMzytwVyjTIPTt9tp9A_-opUKjYqm2zBC1bOM/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1_p3wMVOaULavCKaEWbMwITa1ae_W4QZXmOCSFXpHW-Q/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1Ovct_m0pcewws_ia883pCeFqpnqu2E7SFL7XI_7pdPk/edit?usp=sharing
       # - id: Lecture code (TBD)
