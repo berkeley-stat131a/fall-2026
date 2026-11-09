@@ -541,10 +541,10 @@
       id: '28'
       name: Classification error metrics I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1BQdLpq6aSArflnQqhyLuDi1rl8scOIqHjdRJQITzN1o/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1aTrY-Nj3UInr7C7tre-OW0_05dYvDQvpELGQhP4TNkg/edit?usp=sharing
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1PDZX2iRMh1gZ3FrbCR8oD_HD96A_t1R5w8MmFHCDLic/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/19pCt4RecJKji3iMf6JgECQwWoL79VLjvysCmG9JRlrU/edit?usp=sharing
     - type: HW
       id: '7'
       name: Released (tentative)
@@ -586,7 +586,7 @@
       id: '8'
       name: Released (tentative)
       auxil:
-      - id: Homework 7 (TBD)
+      - id: Homework 8 (TBD)
         # href: '#'
   - date: Tue Nov 17
     items: []
@@ -623,7 +623,7 @@
       id: '8'
       name: DUE
       auxil:
-      - id: Homework 7 (TBD)
+      - id: Homework 8 (TBD)
         # href: '#'
   - date: Tue Nov 24
     items: []
