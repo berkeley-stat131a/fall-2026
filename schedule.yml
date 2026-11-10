@@ -541,18 +541,19 @@
       id: '28'
       name: Classification error metrics I
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1PDZX2iRMh1gZ3FrbCR8oD_HD96A_t1R5w8MmFHCDLic/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1NPuS3_CQDXv-wn2aIbZb72CtUR27G3uvTD3SsnYn21U/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/19pCt4RecJKji3iMf6JgECQwWoL79VLjvysCmG9JRlrU/edit?usp=sharing
+    
+  - date: Tue Nov 10
+    items: 
     - type: HW
       id: '7'
       name: Released (tentative)
       auxil:
       - id: Homework 7 (TBD)
         # href: '#'
-  - date: Tue Nov 10
-    items: []
   - date: Wed Nov 11
     items:
     - type: Holiday
@@ -569,6 +570,8 @@
         # href: https://docs.google.com/presentation/d/1ybRLXIQZDDpoi-XBfXANdc9Ywm6Vosp9YUnMmaqQd08/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1XGra5cZw6fjsrlZ_E_qC11khZ1uPHvTzFHd4QxQanZg/edit?usp=sharing
+  - date: Sat Nov 14
+    items:
     - type: HW
       id: '7'
       name: DUE
