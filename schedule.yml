@@ -550,10 +550,10 @@
     items: 
     - type: HW
       id: '7'
-      name: Released (tentative)
+      name: Released
       auxil:
-      - id: Homework 7 (TBD)
-        # href: '#'
+      - id: Homework 7
+        href: '/assignment7.html'
   - date: Wed Nov 11
     items:
     - type: Holiday
@@ -570,14 +570,6 @@
         # href: https://docs.google.com/presentation/d/1ybRLXIQZDDpoi-XBfXANdc9Ywm6Vosp9YUnMmaqQd08/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1XGra5cZw6fjsrlZ_E_qC11khZ1uPHvTzFHd4QxQanZg/edit?usp=sharing
-  - date: Sat Nov 14
-    items:
-    - type: HW
-      id: '7'
-      name: DUE
-      auxil:
-      - id: Homework 7 (TBD)
-        # href: '#'
 - week: 13
   days:
   - date: Mon Nov 16
@@ -585,6 +577,12 @@
     - type: Lecture
       id: '30'
       name: Causal Inference I
+    - type: HW
+      id: '7'
+      name: DUE
+      auxil:
+      - id: Homework 7
+        href: '/assignment7.html'
     - type: HW
       id: '8'
       name: Released (tentative)
