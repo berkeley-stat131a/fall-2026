@@ -1,0 +1,40 @@
+---
+title: "📝 HW7"
+editor: 
+  markdown: 
+    wrap: sentence
+format: 
+  html: 
+    embed-resources: true
+---
+
+Due date: **Monday, November 16 at midnight**.
+
+If anything seems confusing or unclear, please create an Ed post. We are here to support you!
+
+## 📮 Submission
+
+Submit your assignment via [Pensive](https://www.pensive.com). The Pensive portal will be live at least a few days before the HW deadline.
+
+-   Make sure to tag your answers properly on Pensive, or else you may be docked points for making the grading process more time-consuming.
+
+<!-- **You must submit a PDF of any PingPong chats that include code you used in your submission.**
+
+- This should take the form of one long PDF. One way to do this is to copy
+all of your relevant PingPong chats into a Google Doc, and then print the doc
+as a PDF.
+
+- You are responsible for understanding all the code you submit, regardless of whether or not you used PingPong for help. -->
+
+## Heart failure, LPMs, and logistic regression (100% of the HW6 grade)
+
+Complete the HW7 coding problems:
+[DataHub](https://r.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fberkeley-stat131a%2F131a-code-fall-2026&urlpath=rstudio%2F)
+
+- The HW7 coding problems are located in `131a-code-fall-2026/hw/hw7` on DataHub.
+
+- You are free to download the HW7 repository and work locally in RStudio or Positron, if you wish.
+
+- **You should not need to use an LLM to complete any of the code in this HW.** Everything you're asked to do on this HW is fair game for an exam setting.
+
+**Submit a PDF containing the code and output.** Render your PDF with RStudio or Positron.
