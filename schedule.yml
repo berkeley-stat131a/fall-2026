@@ -566,10 +566,10 @@
       id: '29'
       name: Classification error metrics II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1ybRLXIQZDDpoi-XBfXANdc9Ywm6Vosp9YUnMmaqQd08/edit?usp=sharing
-      - id: Worksheet (TBD)
-        # href: https://docs.google.com/presentation/d/1XGra5cZw6fjsrlZ_E_qC11khZ1uPHvTzFHd4QxQanZg/edit?usp=sharing
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1OgAwJvqHO4HCnFDoGO4cMOzRuPdQbA7Jl3Q0WXgPBOA/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1M2X9snLl0EsCvd-ht_-wJnjsBlyuHACKNYDktPqNWLk/edit?usp=sharing
 - week: 13
   days:
   - date: Mon Nov 16
