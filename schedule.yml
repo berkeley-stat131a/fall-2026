@@ -577,6 +577,11 @@
     - type: Lecture
       id: '30'
       name: Causal Inference I
+      auxil:
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/1A_kV51_6wFaVHyWU86tVpLXZ3p7wWM0KFvJDpqxTPXk/edit?usp=sharing
+      - id: Worksheet
+        href: https://docs.google.com/presentation/d/1ZDMMU3GP9K22e28oISl3OmDSu3NpObZcsoZkgtKcAp4/edit?usp=sharing
     - type: HW
       id: '7'
       name: DUE
