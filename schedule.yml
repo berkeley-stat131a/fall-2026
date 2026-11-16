@@ -622,7 +622,7 @@
       id: '8'
       name: DUE
       auxil:
-      - id: Homework 8 (TBD)
+      - id: Homework 8
         href: '/assignment8.html'
 - week: 14
   days:
