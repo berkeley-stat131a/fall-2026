@@ -1,0 +1,56 @@
+---
+title: "📝 HW8"
+editor:
+  markdown:
+    wrap: sentence
+format:
+  html:
+    embed-resources: true
+resources:
+  - assets/threshold-explorer-standalone.html
+---
+
+Due date: **Friday, November 20 at midnight**.
+
+Some components of this assignment have not been seen by a previous cohort of STAT 131A students, so there may be some unforeseen hiccups.
+
+-   If anything seems confusing or unclear, please create an Ed post. We are here to support you!
+
+## 📮 Submission
+
+Submit your assignment via [Pensive](https://www.pensive.com). The Pensive portal will be live at least a few days before the HW deadline.
+
+- Write your answers on paper or a tablet. Submit a PDF of your answers.
+
+-  **Make sure to tag your answers properly on Pensive, or else you will need to use slip days for every day required to fix your work.**
+
+## Classification error metrics demo
+
+Open the [classification error metrics demo](assets/threshold-explorer-standalone.html){target="_blank"} in a web browser.
+
+Suppose you fit a logistic regression model on a large spam dataset similar to the one from the logistic regression lecture. For example, the model may have been fit to data from 1,000 emails.
+
+This demo shows the results of applying the fitted logistic regression model above to 10 new emails. Answer the following questions. 
+
+1. How many of the 10 emails are actually spam? How do you know?
+2. Which email has the largest gap between its estimated probability of being spam and its actual spam classification? How big is the gap? Could this gap ever exceed 1 for an email outside of this dataset?
+3. What is the demo's default threshold for converting estimated probabilities to predictions?
+4. Under the default threshold, how many emails are predicted to be spam?
+5. Under the default threshold, what is the accuracy of the model?
+6. Under the default threshold, what fraction of spam emails were correctly classified? What metric does this question correspond to?
+7. Under the default threshold, what fraction of real emails were correctly classified? What metric does this question correspond to?
+8. Under the default threshold, what fraction of spam emails were classified as real? What metric does this correspond to?
+9. Under the default threshold, what fraction of real emails were classified as spam? What metric does this correspond to?
+10. Why is the denominator of all four error metrics constant? Is the denominator of these metrics constant in all binary classification scenarios, or is this specific to this situation?
+11. What is the AUC of the model? What is the plain English interpretation of this model's AUC that could be fully understood by someone who had only taken Data 8 or Stat 20? Your answer should include the word "probability".
+12. Slowly increase the threshold. Is the number of emails predicted to be spam increasing, decreasing, or staying flat? Why is this happening?
+13. When you increase the threshold, the FPR cannot increase. Why?
+14. When you decrease the threshold, is the total number of emails predicted to be real increasing, decreasing, or staying flat? Why?
+15. When you increase the threshold, the FNR can never decrease. Why?
+16. When you increase the threshold, you move down the ROC curve. Why?
+17. What threshold corresponds to the top right of the ROC curve? Why?
+18. Does the position on the ROC curve always change when you change the threshold? Why or why not?
+19. When you change the threshold, the AUC does not change. Why?
+20. Does accuracy always move in one direction when you move the threshold in one direction?
+21. Go look at the definition of precision in the lecture slides. Write a real-world interpretation of precision in the context of the demo that could be understood by someone who has only taken Data 8 or Stat 20. Your definition cannot use the words positive or negative, or abbreviations of them.
+22. Repeat the previous question, but for the negative predictive value metric from the slides.

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threshold Explorer</title>
+<style>
+/* Layout: lab-notebook workbench. Data table + vertical threshold slider on the left; confusion matrix, ROC and worked rates on the right. */
+:root {
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --ink: #18202c;
+  --muted: #5a6475;
+  --line: #d8dde6;
+  --accent: #3446d4;
+  --accent-soft: #e4e7fb;
+
+  --tp: #1f8a5b;  --tp-tint: #e2f3e9;
+  --fp: #d24a12;  --fp-tint: #fde7dc;
+  --fn: #9333b0;  --fn-tint: #f3e4f8;
+  --tn: #1c74c9;  --tn-tint: #e1edfa;
+
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --row-h: 42px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141b; --surface: #181e27; --ink: #e5e9f0; --muted: #98a2b3; --line: #2b3340;
+    --accent: #8d9bff; --accent-soft: #232a4a;
+    --tp: #52c98d; --tp-tint: #173627;
+    --fp: #ff8b5e; --fp-tint: #3d2418;
+    --fn: #d58ce9; --fn-tint: #34203c;
+    --tn: #5ea9f2; --tn-tint: #172d47;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141b; --surface: #181e27; --ink: #e5e9f0; --muted: #98a2b3; --line: #2b3340;
+  --accent: #8d9bff; --accent-soft: #232a4a;
+  --tp: #52c98d; --tp-tint: #173627;
+  --fp: #ff8b5e; --fp-tint: #3d2418;
+  --fn: #d58ce9; --fn-tint: #34203c;
+  --tn: #5ea9f2; --tn-tint: #172d47;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+header h1 { font-size: 26px; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 70ch; }
+header code, .mono { font-family: var(--mono); }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; min-width: 0; }
+.panel h2 { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+
+.layout { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: start; }
+.right { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; min-width: 0; }
+.right .rates-panel { grid-column: 1 / -1; }
+@media (max-width: 1080px) { .layout { grid-template-columns: minmax(0, 1fr); } .left { justify-self: center; } }
+@media (max-width: 720px) { .right { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Table + slider ---------- */
+.explorer { position: relative; display: flex; align-items: stretch; }
+.tscroll { min-width: 0; overflow-x: auto; }
+table { border-collapse: separate; border-spacing: 0; font-variant-numeric: tabular-nums; }
+th, td { height: var(--row-h); padding: 0 14px; text-align: center; white-space: nowrap; }
+thead th { font-size: 13px; font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--line); }
+thead th .sym { font-family: var(--mono); font-size: 15px; color: var(--ink); font-weight: 500; }
+tbody td { font-family: var(--mono); font-size: 15px; border-bottom: 1px solid var(--surface); transition: background-color .18s, opacity .18s; }
+tbody tr td:first-child { color: var(--muted); font-size: 13px; border-left: 4px solid transparent; }
+tbody tr.tp td { background: var(--tp-tint); } tbody tr.tp td:first-child { border-left-color: var(--tp); }
+tbody tr.fp td { background: var(--fp-tint); } tbody tr.fp td:first-child { border-left-color: var(--fp); }
+tbody tr.fn td { background: var(--fn-tint); } tbody tr.fn td:first-child { border-left-color: var(--fn); }
+tbody tr.tn td { background: var(--tn-tint); } tbody tr.tn td:first-child { border-left-color: var(--tn); }
+.yhat { font-weight: 600; }
+.yhat.flash { animation: flash .45s ease-out; }
+@keyframes flash { from { color: var(--accent); transform: scale(1.35); } to { transform: none; } }
+.yhat span { display: inline-block; }
+.chip { display: inline-block; min-width: 38px; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: var(--surface); }
+.chip.tp { background: var(--tp); } .chip.fp { background: var(--fp); } .chip.fn { background: var(--fn); } .chip.tn { background: var(--tn); }
+.explorer[data-focus] tbody tr { opacity: .28; }
+.explorer[data-focus="tp"] tbody tr.tp, .explorer[data-focus="fp"] tbody tr.fp,
+.explorer[data-focus="fn"] tbody tr.fn, .explorer[data-focus="tn"] tbody tr.tn { opacity: 1; }
+
+.slider-col { position: relative; width: 190px; flex: none; }
+.slider-head { position: absolute; left: 0; right: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--line); }
+.slider-head .sym { font-family: var(--mono); color: var(--ink); font-weight: 500; font-size: 15px; margin-right: 4px; }
+.track { position: absolute; left: 44px; width: 10px; border-radius: 5px; background: var(--line); cursor: pointer; touch-action: none; outline: none; }
+.track::before { content: ""; position: absolute; inset: -6px -16px; }
+.track .above { position: absolute; left: 0; right: 0; top: 0; border-radius: 5px 5px 0 0; background: var(--accent-soft); border: 1px solid var(--accent); border-bottom: 0; }
+.track .tick { position: absolute; left: -24px; width: 18px; height: 1px; background: var(--line); }
+.track .tick span { position: absolute; right: 22px; top: -8px; font: 11px/16px var(--mono); color: var(--muted); white-space: nowrap; }
+.track .dot { position: absolute; left: 50%; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: var(--muted); pointer-events: none; }
+.handle { position: absolute; left: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: var(--accent); border: 3px solid var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,.25); pointer-events: none; }
+.handle-label { position: absolute; left: 22px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.handle-label .tval { padding: 2px 7px; border-radius: 4px; background: var(--accent); color: var(--surface); font: 600 13px/20px var(--mono); }
+.handle-label .pc { display: flex; flex-direction: column; gap: 2px; padding: 2px 6px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); font: 500 12px/16px var(--mono); color: var(--ink); }
+.handle-label .pc b { font-weight: 600; }
+.track:focus-visible .handle { box-shadow: 0 0 0 4px var(--accent-soft), 0 0 0 6px var(--accent); }
+.tline { position: absolute; left: 0; height: 0; border-top: 2px dashed var(--accent); pointer-events: none; }
+.rule-note { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
+.rule-note b { font-family: var(--mono); color: var(--ink); font-weight: 500; }
+
+/* ---------- Confusion matrix ---------- */
+.cm { display: grid; grid-template-columns: 28px 44px 1fr 1fr; grid-template-rows: 22px 30px 1fr 1fr; gap: 6px; max-width: 360px; margin: 0 auto; }
+.cm .axis { font-size: 12px; font-weight: 600; color: var(--muted); display: flex; align-items: center; justify-content: center; }
+.cm .axis.top { grid-column: 3 / 5; grid-row: 1; }
+.cm .axis.side { grid-column: 1; grid-row: 3 / 5; writing-mode: vertical-rl; transform: rotate(180deg); }
+.cm .lab { font-family: var(--mono); font-size: 13px; color: var(--muted); display: flex; align-items: center; justify-content: center; }
+.cell { aspect-ratio: 1 / 0.82; border-radius: 8px; border: 2px solid; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: default; transition: transform .15s, box-shadow .15s; }
+.cell .k { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; }
+.cell .n { font-family: var(--mono); font-size: 34px; font-weight: 600; line-height: 1.1; }
+.cell .d { font-size: 11px; color: var(--muted); text-align: center; }
+.cell.tp { background: var(--tp-tint); border-color: var(--tp); } .cell.tp .k, .cell.tp .n { color: var(--tp); }
+.cell.fp { background: var(--fp-tint); border-color: var(--fp); } .cell.fp .k, .cell.fp .n { color: var(--fp); }
+.cell.fn { background: var(--fn-tint); border-color: var(--fn); } .cell.fn .k, .cell.fn .n { color: var(--fn); }
+.cell.tn { background: var(--tn-tint); border-color: var(--tn); } .cell.tn .k, .cell.tn .n { color: var(--tn); }
+.cell.hl { transform: scale(1.04); box-shadow: 0 4px 14px rgba(0,0,0,.14); }
+.totals span { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.totals b { white-space: nowrap; }
+.totals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 360px; margin-inline: auto; gap: 10px 16px; margin-top: 14px; font-size: 13px; color: var(--muted); }
+.totals b { font-family: var(--mono); color: var(--ink); font-weight: 500; }
+
+/* ---------- ROC ---------- */
+.roc svg { width: 100%; max-width: 380px; height: auto; display: block; margin: 0 auto; overflow: visible; }
+.roc .grid line { stroke: var(--line); stroke-width: 1; }
+.roc .frame { fill: none; stroke: var(--muted); stroke-width: 1; }
+.roc .diag { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; opacity: .6; }
+.roc .area { fill: var(--accent-soft); }
+.roc .curve { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linejoin: round; }
+.roc .vtx { fill: var(--surface); stroke: var(--accent); stroke-width: 1.5; }
+.roc .ticklab { font: 11px var(--mono); fill: var(--muted); }
+.roc .axlab { font: 600 12px var(--mono); fill: var(--muted); }
+.roc .auc { font: 700 28px var(--sans); fill: var(--accent); }
+.roc .cur { transition: transform .22s ease-out; }
+.roc .cur circle { fill: var(--accent); stroke: var(--surface); stroke-width: 3; }
+.roc .cur .halo { fill: var(--accent); opacity: .18; stroke: none; }
+.roc .curlab rect { fill: var(--surface); stroke: var(--accent); stroke-width: 1; }
+.roc .curlab text { font: 600 12px var(--mono); fill: var(--ink); }
+.roc-note { text-align: center; font-size: 13px; color: var(--muted); margin-top: 8px; }
+.roc-note b { font-family: var(--mono); color: var(--ink); font-weight: 500; }
+
+/* ---------- Rates ---------- */
+.rates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 560px) { .rates { grid-template-columns: minmax(0, 1fr); } }
+.rate { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; min-width: 0; overflow-x: auto; }
+.rate .name { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.rate .name b { font-family: var(--mono); font-size: 17px; font-weight: 600; }
+.rate .name small { font-size: 12px; color: var(--muted); }
+.eq { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 16px; white-space: nowrap; }
+.frac { display: inline-flex; flex-direction: column; align-items: center; line-height: 1.25; }
+.frac > span { padding: 0 4px; }
+.frac > span + span { border-top: 1.5px solid currentColor; }
+.eq .result { font-size: 20px; font-weight: 600; }
+.eq .result .frac > span + span { border-top-width: 2px; }
+.c-tp { color: var(--tp); font-weight: 600; } .c-fp { color: var(--fp); font-weight: 600; }
+.c-fn { color: var(--fn); font-weight: 600; } .c-tn { color: var(--tn); font-weight: 600; }
+.rate .bar { height: 6px; border-radius: 3px; background: var(--line); margin-top: 12px; overflow: hidden; }
+.rate .bar i { display: block; height: 100%; transition: width .22s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+@media (max-width: 440px) {
+  th, td { padding: 0 8px; }
+  .col-i { display: none; }
+  .slider-col { width: 172px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Threshold Explorer</h1>
+    <p>A model gives each of 10 people an estimated probability <span class="mono">p̂</span> of the outcome. Drag the threshold <span class="mono">t</span> to turn those probabilities into predictions <span class="mono">ŷ</span>, and watch the confusion matrix, ROC point and error rates update.</p>
+  </header>
+
+  <div class="layout">
+    <section class="panel left" aria-label="Data and threshold">
+      <h2>Data, sorted by p̂</h2>
+      <div class="explorer" id="explorer">
+        <div class="tscroll">
+          <table id="tbl">
+            <thead>
+              <tr>
+                <th class="col-i">#</th>
+                <th><span class="sym">y</span><br>actual</th>
+                <th><span class="sym">p̂</span><br>est. prob.</th>
+                <th><span class="sym">ŷ</span><br>predicted</th>
+                <th>result</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="slider-col" id="sliderCol">
+          <div class="slider-head" id="sliderHead"><span class="sym">t</span>threshold</div>
+          <div class="track" id="track" role="slider" tabindex="0" aria-label="Classification threshold" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="1">
+            <div class="above" id="above"></div>
+            <div class="handle" id="handle"><div class="handle-label"><span class="tval" id="handleLabel">0.50</span><span class="pc"><span>ŷ=1: <b id="pc1"></b></span><span>ŷ=0: <b id="pc0"></b></span></span></div></div>
+          </div>
+        </div>
+        <div class="tline" id="tline"></div>
+      </div>
+      <p class="rule-note">Rule: <b>ŷ = 1</b> if <b>p̂ ≥ t</b>, otherwise <b>ŷ = 0</b>. Drag the slider or use the arrow keys.</p>
+    </section>
+
+    <div class="right">
+      <section class="panel" aria-label="Confusion matrix">
+        <h2>Confusion matrix</h2>
+        <div class="cm">
+          <div class="axis top">Predicted ŷ</div>
+          <div class="lab" style="grid-column:3;grid-row:2">ŷ = 1</div>
+          <div class="lab" style="grid-column:4;grid-row:2">ŷ = 0</div>
+          <div class="axis side">Actual y</div>
+          <div class="lab" style="grid-column:2;grid-row:3">y = 1</div>
+          <div class="lab" style="grid-column:2;grid-row:4">y = 0</div>
+          <div class="cell tp" data-k="tp" style="grid-column:3;grid-row:3"><span class="k">TP</span><span class="n" id="n-tp">0</span><span class="d">true positive</span></div>
+          <div class="cell fn" data-k="fn" style="grid-column:4;grid-row:3"><span class="k">FN</span><span class="n" id="n-fn">0</span><span class="d">false negative</span></div>
+          <div class="cell fp" data-k="fp" style="grid-column:3;grid-row:4"><span class="k">FP</span><span class="n" id="n-fp">0</span><span class="d">false positive</span></div>
+          <div class="cell tn" data-k="tn" style="grid-column:4;grid-row:4"><span class="k">TN</span><span class="n" id="n-tn">0</span><span class="d">true negative</span></div>
+        </div>
+        <div class="totals">
+          <span>Actual positives <b id="totP">P</b></span><span>Actual negatives <b id="totN">N</b></span>
+          <span>Predicted positives <b id="totPP"></b></span><span>Predicted negatives <b id="totPN"></b></span>
+        </div>
+      </section>
+
+      <section class="panel roc" aria-label="ROC curve">
+        <h2>ROC curve</h2>
+        <svg id="roc" viewBox="0 0 360 340" role="img" aria-label="ROC curve with the current threshold marked"></svg>
+        <div class="roc-note" id="rocNote"></div>
+      </section>
+
+      <section class="panel rates-panel" aria-label="Rates">
+        <h2>Rates at the current threshold</h2>
+        <div class="rates" id="rates"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  // Ten example points, one p̂ in each interval (0, 0.1], (0.1, 0.2], ..., (0.9, 1].
+  const DATA = [
+    { p: 0.94, y: 1 }, { p: 0.87, y: 1 }, { p: 0.73, y: 0 }, { p: 0.66, y: 1 }, { p: 0.58, y: 1 },
+    { p: 0.42, y: 0 }, { p: 0.39, y: 1 }, { p: 0.21, y: 0 }, { p: 0.15, y: 1 }, { p: 0.04, y: 0 },
+  ].sort((a, b) => b.p - a.p);
+
+  const P = DATA.filter(d => d.y === 1).length;
+  const N = DATA.length - P;
+  let t = 0.5;
+
+  const $ = id => document.getElementById(id);
+  const tbody = $('tbody'), track = $('track'), explorer = $('explorer');
+  const yhatOf = d => (d.p >= t - 1e-9 ? 1 : 0);
+  const kindOf = d => (yhatOf(d) ? (d.y ? 'tp' : 'fp') : (d.y ? 'fn' : 'tn'));
+
+  // ----- table -----
+  const rows = DATA.map((d, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td class="col-i">${i + 1}</td><td>${d.y}</td><td>${d.p.toFixed(2)}</td><td class="yhat"><span></span></td><td><span class="chip"></span></td>`;
+    tbody.appendChild(tr);
+    tr.addEventListener('mouseenter', () => highlightCell(tr.dataset.k));
+    tr.addEventListener('mouseleave', () => highlightCell(null));
+    return { tr, yhat: tr.querySelector('.yhat span'), chip: tr.querySelector('.chip'), prev: null };
+  });
+
+  // ----- slider ticks + dots -----
+  for (let k = 0; k <= 10; k++) {
+    const tick = document.createElement('div');
+    tick.className = 'tick';
+    tick.style.top = `${(1 - k / 10) * 100}%`;
+    tick.innerHTML = `<span>${(k / 10).toFixed(1)}</span>`;
+    track.appendChild(tick);
+  }
+  DATA.forEach(d => {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    dot.style.top = `${(1 - d.p) * 100}%`;
+    track.insertBefore(dot, $('handle'));
+  });
+
+  // Align slider track with tbody (top of first row = 1, bottom of last row = 0).
+  function layoutSlider() {
+    const eb = explorer.getBoundingClientRect();
+    const tb = tbody.getBoundingClientRect();
+    const hb = document.querySelector('#tbl thead').getBoundingClientRect();
+    const top = tb.top - eb.top, h = tb.height;
+    track.style.top = top + 'px';
+    track.style.height = h + 'px';
+    const head = $('sliderHead');
+    head.style.top = (hb.top - eb.top) + 'px';
+    head.style.height = hb.height + 'px';
+    const tl = $('tline');
+    tl.style.width = (track.getBoundingClientRect().left - eb.left + 5) + 'px';
+    positionLine();
+  }
+  function positionLine() {
+    const top = parseFloat(track.style.top) || 0, h = parseFloat(track.style.height) || 0;
+    $('tline').style.top = (top + (1 - t) * h - 1) + 'px';
+  }
+
+  // ----- slider interaction -----
+  const clamp = v => Math.min(1, Math.max(0, v));
+  const setT = v => { const nv = Math.round(clamp(v) * 100) / 100; if (nv !== t) { t = nv; render(); } };
+  const fromPointer = e => { const r = track.getBoundingClientRect(); setT(1 - (e.clientY - r.top) / r.height); };
+  track.addEventListener('pointerdown', e => { track.setPointerCapture(e.pointerId); track.focus(); fromPointer(e); e.preventDefault(); });
+  track.addEventListener('pointermove', e => { if (track.hasPointerCapture(e.pointerId)) fromPointer(e); });
+  track.addEventListener('keydown', e => {
+    const step = { ArrowUp: .01, ArrowRight: .01, ArrowDown: -.01, ArrowLeft: -.01, PageUp: .1, PageDown: -.1 }[e.key];
+    if (step !== undefined) { setT(t + step); e.preventDefault(); }
+    else if (e.key === 'Home') { setT(0); e.preventDefault(); }
+    else if (e.key === 'End') { setT(1); e.preventDefault(); }
+  });
+
+  // ----- confusion matrix hover linking -----
+  const cells = document.querySelectorAll('.cell');
+  cells.forEach(c => {
+    c.addEventListener('mouseenter', () => { explorer.dataset.focus = c.dataset.k; c.classList.add('hl'); });
+    c.addEventListener('mouseleave', () => { delete explorer.dataset.focus; c.classList.remove('hl'); });
+  });
+  function highlightCell(k) { cells.forEach(c => c.classList.toggle('hl', c.dataset.k === k)); }
+
+  // ----- ROC -----
+  const svg = $('roc'), NS = 'http://www.w3.org/2000/svg';
+  const M = { l: 54, r: 16, t: 12, b: 48 }, W = 360 - M.l - M.r, H = 340 - M.t - M.b;
+  const sx = v => M.l + v * W, sy = v => M.t + (1 - v) * H;
+  const el = (tag, attrs, parent = svg) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+
+  // Points after including the top i rows as predicted positive.
+  const pts = [{ tp: 0, fp: 0 }];
+  DATA.forEach(d => { const last = pts[pts.length - 1]; pts.push({ tp: last.tp + d.y, fp: last.fp + (1 - d.y) }); });
+  let aucNum = 0;
+  DATA.forEach((d, i) => { if (d.y === 0) aucNum += pts[i].tp; });
+
+  function drawRoc() {
+    const g = el('g', { class: 'grid' });
+    for (let k = 0; k <= N; k++) el('line', { x1: sx(k / N), x2: sx(k / N), y1: sy(0), y2: sy(1) }, g);
+    for (let k = 0; k <= P; k++) el('line', { y1: sy(k / P), y2: sy(k / P), x1: sx(0), x2: sx(1) }, g);
+    const area = pts.map(q => `${sx(q.fp / N)},${sy(q.tp / P)}`).join(' L');
+    el('path', { class: 'area', d: `M${area} L${sx(1)},${sy(0)} Z` });
+    el('text', { class: 'auc', x: sx(.66), y: sy(.18), 'text-anchor': 'middle' }).textContent = `AUC ≈ ${(aucNum / (P * N)).toFixed(2)}`;
+    el('line', { class: 'diag', x1: sx(0), y1: sy(0), x2: sx(1), y2: sy(1) });
+    el('rect', { class: 'frame', x: sx(0), y: sy(1), width: W, height: H });
+    el('path', { class: 'curve', d: 'M' + area });
+    pts.forEach(q => el('circle', { class: 'vtx', cx: sx(q.fp / N), cy: sy(q.tp / P), r: 3.5 }));
+    for (let k = 0; k <= N; k++) el('text', { class: 'ticklab', x: sx(k / N), y: sy(0) + 16, 'text-anchor': 'middle' }).textContent = `${k}/${N}`;
+    for (let k = 0; k <= P; k++) el('text', { class: 'ticklab', x: sx(0) - 8, y: sy(k / P) + 4, 'text-anchor': 'end' }).textContent = `${k}/${P}`;
+    el('text', { class: 'axlab', x: sx(.5), y: 340 - 8, 'text-anchor': 'middle' }).textContent = 'False Positive Rate (FPR)';
+    const yl = el('text', { class: 'axlab', x: 0, y: 0, 'text-anchor': 'middle', transform: `translate(14 ${sy(.5)}) rotate(-90)` });
+    yl.textContent = 'True Positive Rate (TPR)';
+    const cur = el('g', { class: 'cur', id: 'cur' });
+    el('circle', { class: 'halo', r: 14 }, cur);
+    el('circle', { r: 7 }, cur);
+    const lab = el('g', { class: 'curlab', id: 'curlab' }, cur);
+    el('rect', { rx: 4, height: 22, y: -11 }, lab);
+    el('text', { y: 4.5 }, lab);
+  }
+
+  // ----- fractions -----
+  const frac = (num, den) => `<span class="frac"><span>${num}</span><span>${den}</span></span>`;
+  const n = (k, v) => `<span class="c-${k}">${v}</span>`;
+
+  const RATES = [
+    { key: 'TPR', long: 'True Positive Rate', num: 'tp', den: ['tp', 'fn'], color: 'tp' },
+    { key: 'FPR', long: 'False Positive Rate', num: 'fp', den: ['fp', 'tn'], color: 'fp' },
+    { key: 'FNR', long: 'False Negative Rate', num: 'fn', den: ['fn', 'tp'], color: 'fn' },
+    { key: 'TNR', long: 'True Negative Rate', num: 'tn', den: ['tn', 'fp'], color: 'tn' },
+  ];
+  $('rates').innerHTML = RATES.map(r => `<div class="rate"><div class="name"><b class="c-${r.color}">${r.long} (${r.key})</b></div><div class="eq" id="eq-${r.key}"></div><div class="bar"><i id="bar-${r.key}" style="background:var(--${r.color})"></i></div></div>`).join('');
+
+  // ----- render -----
+  function render() {
+    const c = { tp: 0, fp: 0, fn: 0, tn: 0 };
+    DATA.forEach((d, i) => {
+      const k = kindOf(d), yh = yhatOf(d), r = rows[i];
+      c[k]++;
+      r.tr.className = k; r.tr.dataset.k = k;
+      if (r.prev !== null && r.prev !== yh) { r.yhat.parentElement.classList.remove('flash'); void r.yhat.offsetWidth; r.yhat.parentElement.classList.add('flash'); }
+      r.prev = yh;
+      r.yhat.textContent = yh;
+      r.chip.className = 'chip ' + k; r.chip.textContent = k.toUpperCase();
+    });
+    for (const k in c) $('n-' + k).textContent = c[k];
+    $('totP').textContent = `${c.tp} + ${c.fn} = ${P}`;
+    $('totN').textContent = `${c.fp} + ${c.tn} = ${N}`;
+    $('totPP').textContent = `${c.tp} + ${c.fp} = ${c.tp + c.fp}`;
+    $('totPN').textContent = `${c.fn} + ${c.tn} = ${c.fn + c.tn}`;
+
+    // slider
+    const pct = (1 - t) * 100;
+    $('handle').style.top = pct + '%';
+    $('above').style.height = pct + '%';
+    $('handleLabel').textContent = t.toFixed(2);
+    $('pc1').textContent = c.tp + c.fp;
+    $('pc0').textContent = c.fn + c.tn;
+    track.setAttribute('aria-valuenow', t.toFixed(2));
+    track.setAttribute('aria-valuetext', `threshold ${t.toFixed(2)}`);
+    positionLine();
+
+    // rates
+    RATES.forEach(r => {
+      const num = c[r.num], d1 = c[r.den[0]], d2 = c[r.den[1]];
+      const nm = r.num.toUpperCase(), dn = r.den.map(x => x.toUpperCase());
+      $('eq-' + r.key).innerHTML =
+        `<span>${r.key} =</span>${frac(n(r.num, nm), `${n(r.den[0], dn[0])} + ${n(r.den[1], dn[1])}`)}<span>=</span>` +
+        `${frac(n(r.num, num), `${n(r.den[0], d1)} + ${n(r.den[1], d2)}`)}<span>=</span>` +
+        `<span class="result">${frac(num, d1 + d2)}</span>`;
+      $('bar-' + r.key).style.width = (d1 + d2 ? num / (d1 + d2) * 100 : 0) + '%';
+    });
+
+    // ROC point
+    const fx = c.fp / N, ty = c.tp / P;
+    $('cur').style.transform = `translate(${sx(fx)}px, ${sy(ty)}px)`;
+    const lab = $('curlab'), txt = lab.querySelector('text'), rect = lab.querySelector('rect');
+    txt.textContent = `(${c.fp}/${N}, ${c.tp}/${P})`;
+    const w = txt.getComputedTextLength ? txt.getComputedTextLength() + 14 : 90;
+    rect.setAttribute('width', w);
+    // keep label inside the plot
+    const right = sx(fx) + 14 + w <= M.l + W;
+    const below = sy(ty) < M.t + 30;
+    const lx = right ? 14 : -14 - w, ly = below ? 24 : -22;
+    rect.setAttribute('x', lx); txt.setAttribute('x', lx + 7);
+    rect.setAttribute('y', ly - 11); txt.setAttribute('y', ly + 4.5);
+    $('rocNote').innerHTML = `Current point (FPR, TPR) = <b>(${c.fp}/${N}, ${c.tp}/${P})</b>`;
+  }
+
+  drawRoc();
+  render();
+  layoutSlider();
+  window.addEventListener('resize', layoutSlider);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutSlider(); render(); });
+  if (window.ResizeObserver) new ResizeObserver(layoutSlider).observe(tbody);
+})();
+</script>
+
+</body>
+</html>

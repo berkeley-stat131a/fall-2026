@@ -592,8 +592,8 @@
       id: '8'
       name: Released (tentative)
       auxil:
-      - id: Homework 8 (TBD)
-        # href: '#'
+      - id: Homework 8
+        href: '/assignment8.html'
   - date: Tue Nov 17
     items: []
   - date: Wed Nov 18
@@ -601,18 +601,29 @@
     - type: Lecture
       id: '31'
       name: Causal Inference II
+      auxil:
+      - id: Slides (TBD)
+        # href: https://docs.google.com/presentation/d/1wFZM1TEQJ1uY1Q2LVMqb49LNUmO9S-wwp9JfoAROb6U/edit?usp=sharing
+      - id: Worksheet (TBD)
+        # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
   - date: Thu Nov 19
     items: []
   - date: Fri Nov 20
     items:
     - type: Lecture
-      name: A brief overview of statistical methods
+      name: Causal Inference III
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1wFZM1TEQJ1uY1Q2LVMqb49LNUmO9S-wwp9JfoAROb6U/edit?usp=sharing
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
       id: '32'
+    - type: HW
+      id: '8'
+      name: DUE
+      auxil:
+      - id: Homework 8 (TBD)
+        href: '/assignment8.html'
 - week: 14
   days:
   - date: Mon Nov 23
@@ -625,12 +636,6 @@
       - id: Worksheet (TBD)
         # href: https://docs.google.com/presentation/d/1yqRxpnwfHsfbKn8Xrgx-nuUXba_beY1Hm4TnOZY4V3I/edit?usp=sharing
       id: '33'
-    - type: HW
-      id: '8'
-      name: DUE
-      auxil:
-      - id: Homework 8 (TBD)
-        # href: '#'
   - date: Tue Nov 24
     items: []
   - date: Wed Nov 25
