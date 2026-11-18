@@ -578,8 +578,8 @@
       id: '30'
       name: Causal Inference I
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/1A_kV51_6wFaVHyWU86tVpLXZ3p7wWM0KFvJDpqxTPXk/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/11uiIUArNh8jpYwoFOWVEt9clvvZBZGDF-hz01V3a5Ho/edit?usp=sharing
       - id: Worksheet
         href: https://docs.google.com/presentation/d/1ZDMMU3GP9K22e28oISl3OmDSu3NpObZcsoZkgtKcAp4/edit?usp=sharing
     - type: HW
@@ -602,9 +602,9 @@
       id: '31'
       name: Causal Inference II
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1wFZM1TEQJ1uY1Q2LVMqb49LNUmO9S-wwp9JfoAROb6U/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Abridged Slides
+        href: https://docs.google.com/presentation/d/1NB-LmVoH9e1TJkOUc8NdDuG_qgxSZ5psR41f4Hz1xHo/edit?usp=sharing
+      - id: No worksheet today
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
   - date: Thu Nov 19
     items: []
