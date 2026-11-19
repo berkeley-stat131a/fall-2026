@@ -602,8 +602,8 @@
       id: '31'
       name: Causal Inference II
       auxil:
-      - id: Abridged Slides
-        href: https://docs.google.com/presentation/d/1NB-LmVoH9e1TJkOUc8NdDuG_qgxSZ5psR41f4Hz1xHo/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1k-ZVeXrh_PfTly6RwAYULClliNS1r0FUaFq1akSyiXo/edit?usp=sharing
       - id: No worksheet today
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
   - date: Thu Nov 19
@@ -613,9 +613,9 @@
     - type: Lecture
       name: Causal Inference III
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1wFZM1TEQJ1uY1Q2LVMqb49LNUmO9S-wwp9JfoAROb6U/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/16YjrxYOD9FCfWLaL0veMcZi6HS7zEmCjhsbPtn3SR0o/edit?usp=sharing
+      - id: No worksheet today
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
       id: '32'
     - type: HW
@@ -629,7 +629,7 @@
   - date: Mon Nov 23
     items:
     - type: Lecture
-      name: k-means clustering
+      name: A brief overview of statistical methods
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1nXyjqORTciHMndmcHKsYEywjdFs8YfcfxAJiQYXtXoA/edit?usp=sharing
@@ -657,8 +657,8 @@
     - type: Lecture
       id: 'MT3P'
       name: MT3 Prep Lecture
-      auxil:
-      - id: Practice problems on bcourses (TBD)
+      # auxil:
+      # - id: Practice problems on bcourses (TBD)
         # href: '#'
   - date: Tue Dec 1
     items: []
@@ -675,13 +675,13 @@
   - date: Fri Dec 4
     items:
     - type: Lecture
-      name: Decision Trees / Random Forests
+      name: Wrap-up / AMA
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1_7oJHf85G8XBKj5XLlAZ4_vEX_d4LeHfJsrGEdXz9Lo/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: No worksheet today
         # href: https://docs.google.com/presentation/d/16eeUOIbWVCe22mzl0eqOQfRob5mHUqeGllrqPdOXeNs/edit?usp=sharing
-      id: '37'
+      id: '34'
 - week: 16
   days:
   - date: Mon Dec 7
