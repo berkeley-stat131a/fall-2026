@@ -613,8 +613,8 @@
     - type: Lecture
       name: Causal Inference III
       auxil:
-      - id: Abridged slides
-        href: https://docs.google.com/presentation/d/16YjrxYOD9FCfWLaL0veMcZi6HS7zEmCjhsbPtn3SR0o/edit?usp=sharing
+      - id: Slides
+        href: https://docs.google.com/presentation/d/1UsUnk7MnaeanBWFA-toBmdmpA9DEBwOBQwWT_lbZyno/edit?usp=sharing
       - id: No worksheet today
         # href: https://docs.google.com/presentation/d/1uN-fM_pPO9ZuRywgEbTsyAPJ-Lx-MBz527y3ZQWywEc/edit?usp=sharing
       id: '32'
