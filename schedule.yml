@@ -629,11 +629,11 @@
   - date: Mon Nov 23
     items:
     - type: Lecture
-      name: A brief overview of statistical methods
+      name: Overview of statistical methods I
       auxil:
-      - id: Slides (TBD)
-        # href: https://docs.google.com/presentation/d/1nXyjqORTciHMndmcHKsYEywjdFs8YfcfxAJiQYXtXoA/edit?usp=sharing
-      - id: Worksheet (TBD)
+      - id: Abridged slides
+        href: https://docs.google.com/presentation/d/16va5INzZR4Hf41TmYYoMIrF9rOLrbhHxTol6TaTIZrY/edit?usp=sharing
+      - id: No worksheet today
         # href: https://docs.google.com/presentation/d/1yqRxpnwfHsfbKn8Xrgx-nuUXba_beY1Hm4TnOZY4V3I/edit?usp=sharing
       id: '33'
   - date: Tue Nov 24
@@ -675,7 +675,7 @@
   - date: Fri Dec 4
     items:
     - type: Lecture
-      name: Wrap-up / AMA
+      name: Overview of statistical methods II + AMA
       auxil:
       - id: Slides (TBD)
         # href: https://docs.google.com/presentation/d/1_7oJHf85G8XBKj5XLlAZ4_vEX_d4LeHfJsrGEdXz9Lo/edit?usp=sharing
